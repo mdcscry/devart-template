@@ -5,7 +5,7 @@ Glyphmatic.us
 Matthew Cryer - mdcscry
 
 ## Description
-I use Unicode, Chrome, Webkit, and js/css/html to generatively produce WebArt.  I began using random on an Apple 2+ in 1983.  I built a stocks and bonds game.  My smart cousin figured out that the random generator on that computer used the same sequence each time the program started.  I've been hooked on random since. I created 4 projects in the early 2000's which I'll comment on in blogs.  Glyphmatic.us is a furthering of that work using the vast pallette of Unicode.
+I use Unicode, Chrome, Webkit, and js/css/html to generatively produce WebArt.  I began using random on an Apple 2+ in 1983.  I built a stocks and bonds game.  My smart cousin figured out that the random generator on that computer used the same sequence each time the program started.  I've been hooked on random since. I created 4 projects in the early 2000's which I'll comment on in blogs.  Glyphmatic.us is a furthering of that work using the vast palette of Unicode.
 
 ## Link to Prototype
 http://www.glyphmatic.us
