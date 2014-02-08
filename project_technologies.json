@@ -1,13 +1,13 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "web" "javascript" "CSS" "HTML"
         ],
         "platforms": [
-            "insert platforms"
+            "WWW" "CHROME"
         ],
         "toolkits": [
-            "insert toolkits"
+            "-webkit" "DOM" "UNICODE" 
         ]
     },
     "themes": [
