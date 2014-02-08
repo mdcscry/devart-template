@@ -1,32 +1,23 @@
-# Project Title
 Glyphmatic.us
 
-## Authors
-Matthew Cryer - mdcscry
+Crte: Matthew Cryer - mdcscry
 
-## Description
-I use Unicode, Chrome, Webkit, and js/css/html to generatively produce WebArt.  I began using random on an Apple 2+ in 1983.  I built a stocks and bonds game.  My smart cousin figured out that the random generator on that computer used the same sequence each time the program started.  I've been hooked on random since. I created 4 projects in the early 2000's which I'll comment on in blogs.  Glyphmatic.us is a furthering of that work using the vast palette of Unicode.
+Desc:
+I use Unicode, Chrome, Webkit, js/css/html and the random function of javascript to generatively produce WebArt. 
+This is a Chrome experiment.  It is a restriction study in the sense that I've chosen to produce all code client side-modifying all and creating many through runtime DOM.  Nothing too fancy, that's the point.  I've created 10-15 engines with 100+ variants in 2013-2014.  The hope is reveal this exploration through the remainder of the conference.
 
-## Link to Prototype
-http://www.glyphmatic.us
+I produced this version of the website in July.  My original htm weren't gerneralized.  I grew wary of the cut and paste and wanted to build a framework to generate all the pages.  This took a good bit of effort and has ended up untenable.  Recent versions of Chrome rendered some pages inoperable.  Also, the variable nature of font sets across platforms is, to put it charitably, an undertaking.
 
-[Example Link](http://www.google.com "Example Link")
+http://www.glyphmatic.us (hit f5 if nothing appears)
 
-## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
-```
-function test() {
-  console.log("Printing a test");
-}
-```
-## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
+Hst:
+I began using random on an Apple 2+ in 1983.  I built a stocks and bonds game.  My smart cousin figured out that the random generator on that computer used the same sequence each time the program started.  I've been hooked on random since. I created 4 projects in the early 2000's which I'll comment on in blogs.  Glyphmatic.us is a furthering of that work using the vast palette of Unicode.
 
-[Example Link](http://www.google.com "Example Link")
 
-## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
 
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
 
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+
+
+
+
+
