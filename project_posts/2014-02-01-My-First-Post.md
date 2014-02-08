@@ -1,5 +1,7 @@
-Insert a description to describe your update to document your creative process. The Commissioned Interactive Artists will be doing the same so you can reference their Project Posts.
+Screenshots from the first glyphmatic.us--flasher.htm.  Feb 2, 2013.
 
-![Example Image](../project_images/cover.jpg?raw=true "Example Image")
-
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+![Example Image](../project_images/flasher1.jpg?raw=true "flasher.htm")
+![Example Image](../project_images/flasher2.jpg?raw=true "flasher.htm")
+![Example Image](../project_images/flasher3.jpg?raw=true "flasher.htm")
+![Example Image](../project_images/flasher4.jpg?raw=true "flasher.htm")
+![Example Image](../project_images/flasher5.jpg?raw=true "flasher.htm")
