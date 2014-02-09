@@ -3,6 +3,8 @@ devArt--Hangul in particular.
 
 project_code/dev_art_flasher_hsla.htm
 
-also
+http://glyphmatic.us/devArt/dev_art_flasher_hsla.htm
+
+also another version without hsla.  Color palette hard-coded.
 
 http://glyphmatic.us/flasher1.htm ( wait for it...)
