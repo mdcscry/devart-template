@@ -1,6 +1,4 @@
-
-##Glyphmatic.us
-
+<H2>Glyphmatic.us</H2>
 
 ###Matthew Cryer - mdcscry###
 
