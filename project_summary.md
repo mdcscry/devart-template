@@ -1,19 +1,23 @@
-<HR>
- 
-<H2>Glyphmatic.us</H2>
 
-<H3>Created by:</H3> 
-<H4>Matthew Cryer - mdcscry</H3>
+##Glyphmatic.us
 
-<H3>Desc:</H3>
-I use Chrome, Webkit, js/css/html and the Math.random() to generatively produce webArt, a variant of DevArt and a non-existing category.  
 
-Unicode is the palette, Chrome is the Canvas.  Glyphmatic.us reveals and celebrates the unending richness of global hu(wo)manities glyphsets.
+###Matthew Cryer - mdcscry###
 
-This *is* a Chrome Experiment, but works in Safari. 
+###Description:
+####I use Chrome, Webkit, js/css/html and the Math.random() to generatively produce webArt, a variant of DevArt and a non-existing category.  
 
-A question for you:
-Is Chrome a museum worthy platform for artistic expression?
+####Unicode is the palette, Chrome is the Canvas.  Glyphmatic.us reveals and celebrates the unending richness of global hu(wo)manities glyphsets.
+
+####This *is* a Chrome Experiment, but works in Safari.  I'm using webkit. 
+
+
+#####Q:  Is a web browser a museum worthy visual platform/canvas?
+
+
+
+
+
 
 
 
