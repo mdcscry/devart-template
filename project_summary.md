@@ -7,7 +7,7 @@
 
 <H4>Unicode is the palette, Chrome is the Canvas.  Glyphmatic.us reveals and celebrates the unending richness of global hu(wo)manities glyphsets.  
 
-<H4>This <b>is</b> a Chrome Experiment, but works in Safari.  I'm using webkit.   </H4>
+<H4>This <i>is</i> a Chrome Experiment, but works in Safari.  I'm using webkit.   </H4>
 
 <H5>Q:  Is a web browser a museum worthy visual platform/canvas?  </H5>
 
