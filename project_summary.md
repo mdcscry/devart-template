@@ -1,8 +1,11 @@
-Glyphmatic.us
+=====
 
-<b>Crte:</b> <div style="font-size:3em;color:red;">Matthew Cryer - mdcscry</div>
+#Glyphmatic.us
 
-<b>Desc:</b>
+###Create Or?: 
+####Matthew Cryer - mdcscry
+<span class="mySpan" style="color:red;">Webkit</span>
+###Desc:
 I use Unicode, Chrome, Webkit, js/css/html and the random function of javascript to generatively produce WebArt. 
 This is a Chrome experiment.  It is a restriction study in the sense that I've chosen to produce all code client side-modifying all and creating many objects including stylesheets through runtime DOM.  Nothing too fancy, that's the point.  The code is the proxy for the exhibition of Unicode splendor. I've created 10-15 engines with 100+ variants in 2013-2014.  The hope is to reveal this exploration through the remainder of the competition.
 
@@ -15,8 +18,9 @@ http://www.glyphmatic.us (hit f5 if nothing appears)
 
 UNICODE is the lingua franca of the internet.  It represents a compendium of humanities glyph technology.  I argue its creation and adoption is such an achievement that no set of glyphs could adequately describe the importance of the glyphs themselves.  This is a project of world cultural and humanitarian celebration.  I'll delve into this history.
 
-Hst:
+###Hst:
 I began using random on an Apple 2+ in 1983.  I built a computer version of a favorite bookcase game -- Stocks and Bonds bookcase game.  I've been hooked on random since. I created 4 projects in the early 2000's which I'll comment on in postints.  Glyphmatic.us is a furth'u'ring of that work, using the vast palette of Unicode.
+
 
 
 
