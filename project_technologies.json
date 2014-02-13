@@ -1,6 +1,6 @@
 {
     "technologies": {
-        "languages":["javascript","CSS","HTML","UNICODE"],
+        "apis": ["javascript","CSS","HTML","UNICODE"],
         "platforms": ["WWW", "CHROME"],
         "toolkits": [ "-webkit"]
     },
