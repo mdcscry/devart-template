@@ -2,24 +2,42 @@
  
 <H2>Glyphmatic.us</H2>
 
-<H3>Create Or?:</H3> 
+<H3>Created by:</H3> 
 <H4>Matthew Cryer - mdcscry</H3>
 
 <H3>Desc:</H3>
-I use Unicode, Chrome, Webkit, js/css/html and the random function of javascript to generatively produce WebArt. 
-This is a Chrome experiment.  It is a restriction study in the sense that I've chosen to produce all code client side-modifying all and creating many objects including stylesheets through runtime DOM.  Nothing too fancy, that's the point.  The code is the proxy for the exhibition of Unicode splendor. I've created 10-15 engines with 100+ variants in 2013-2014.  The hope is to reveal this exploration through the remainder of the competition.
+I use Chrome, Webkit, js/css/html and the Math.random() to generatively produce WebArt, or DevArt.  
 
-I produced the current version of the website in July.  My original htm weren't generalized.  As the numbers approached 50 I grew weary of cut and paste and set out to build a framework to generate the pages.  After completing 3 different engines the complexity of the approach become untenable.  Recent versions of Chrome have rendered some formatting inserts inoperable.  They work on Android Nexus 5 Chrome browser but not windows 7 Chrome.   Also, the variable nature of font-sets installed across platforms is, to put it charitably, an undertaking to troubleshoot.
+Unicode is the palette, Chrome is the Canvas.  Glyphmatic.us reveals and celebrates the unending richness of global hu(wo)manities glyphsets.
 
-The fonts required for the complete project will be introduced along the way.  Symbola and Code2000 are vital.
-I've tried to optimize some pages using only glyphs supported in Arial MS Unicode.  That was Until I realized only those users with office installed could use it without paying. That leaves only the barely adequate deja vu sans as a viable Unicode font option for new windows machines without office. 
+This *is* a Chrome Experiment, but works in Safari. 
 
-http://www.glyphmatic.us (hit f5 if nothing appears)
 
-UNICODE is the lingua franca of the internet.  It represents a compendium of humanities glyph technology.  I argue its creation and adoption is such an achievement that no set of glyphs could adequately describe the importance of the glyphs themselves.  This is a project of world cultural and humanitarian celebration.  I'll delve into this history.
+Is Chrome a museum worthy platform for artistic expression?
 
-<H3>Hst:</H3>
-I began using random on an Apple 2+ in 1983.  I built a computer version of a favorite bookcase game -- Stocks and Bonds bookcase game.  I've been hooked on random since. I created 4 projects in the early 2000's which I'll comment on in postints.  Glyphmatic.us is a furth'u'ring of that work, using the vast palette of Unicode.
+<H3>Code:</H3>
+It's a restriction study in the sense that I've chosen to produce all code on the client side.  All objects are modified and many are created at runtime.  Some experiments have thousands of <DIV></DIV> elements, all generated.  Its not exactly cutting edge coding. Repeating many of the same principles throughout, the variability is in the many little algorithms (AllGoRythms) to produce random change, that's interesting....at least that I find interesting--so far I'm the only one lookin..  The blend of CSS and Webkit transformations are well known features of the various standards.  Searching around, I found few serious use-cases: more than a few "here's what it look like" jsfiddles, but not many real applications.  Maybe the inherent cheesiness of saturation scares people away.  :)  But what I think makes Glyphmatic.us "important" isn't the code.  The code is proxy to reveal Unicode's richness.  That's why I'm here.
+
+I produced the current version of the website in July.  The original "studies" weren't generalized, I was building and saving.  As the numbers approached 50, I grew weary of cut and paste and set out to build a framework to generate the pages.  As part of this project, I've done some rework and now have a stable version more or less working on Android Windows and Apple, chrome and safari.  Webkit.  For now, browswer compliance to mozilla, IE and opera feels like work.
+
+The fonts required for the complete project will be introduced along the way.  Symbola and Code2000 are vital.  Some languages are only located on specific fonts.  For a public display, any computer can be set up. I'm looking at some screen capture tech to provide a sense, but so far its been unusable.
+I've tried to optimize some pages using only glyphs supported in Arial MS Unicode. After looking at Android, Windows 7 and Windows 8 I had to pare back the fontset.  Font set installation is definitely the flaw in the fly's ointment for Glyphmatic.us. 
+
+<b>http://www.glyphmatic.us</b>
+
+UNICODE is the lingua franca of the internet.  It represents a compendium of humanities glyph technology.  I argue its creation and adoption is such an achievement that no set of glyphs could adequately describe the importance of the glyphs themselves.  And that right there is some pretty hot recursive glyph action. This is a project of world cultural and humanitarian celebration.  I'll delve into the UNICODE story and some of the stories associated to different font sets.
+
+<H3>Hist:</H3>
+I began using random in Applesoft basic on an Apple 2+ in 1983.  I built a computer version of a favorite bookcase game -- Stocks and Bonds bookcase game.  My mom predates me.  She built a football game with random plays in a programming class at Saddleback college. Soon, thereafter she appeared with an Apple 2 summarily replace by an Apple 2+.  
+
+To further establish my awesome bones fides, we used a modem to receive the basketball box scores for the PCAA, an athletic conference in California.  She built a program that allowed me to text enter the scores, and compute the league averages to be distributed to the regional papers including Orange County Register and the LA Times.  We were kewl.  Also,  I was an early IT drone.  Thanks Ma. 
+
+I've been hooked on random since. 
+
+1992, in Tulsa Oklahoma, I created wEIERDS.  wEIRDS randomly assembled new words.  I collect roots like plode, ject, vert to be combined with prefixes and suffixes.  Fortunately for me, words are cheap. For a year or so after I annoyed the crap out of everyone I came in contact with, wowing the assembled guests with my computed variation bravado.  I intend to recreate that project within Glyphmatic.us framework.  Here's a link to my first website www.eschaton-bros.com from the wayback machine. http://web.archive.org/web/19991012072542/http://www.eschaton-bros.com/weirds/weirds.html It isn't very pretty, but you can see some funny definitions from early web days of 98-99.  Not that you care, Da Freq, who built the dead applet, Weagul and Bitrot still roam.  Weagul is Seelight on quora.
+
+I created 4 projects in the 2002-2004. Glyphmatic.us is a furth'u'ring of that work. I created an IE version called newArt with no DOM manipulation.  I randomly used the IE filters, IE still has some bitchin filters.  The first stab was in perl on the messagemedia servers(dead email marketing company bought by doubleclick bought by google.) then later with a JSP framework.   I rebuilt weirds using the same JSP javabean framework.  The last piece was the digitization of a random poetry project called blatherJazz.  No really it was Blather Jazz, but this is a coder competition.  I collected 10000+ english bits and assembled them in a properly punctuated and spaced randomly produced style sheet displayed poetry.  I always remember "Fiddlesticks" as an excellent example of a English joy.  It would combine with the aforementioned "thereafter" to make "Fiddlesticks, thereafter!". I even flagged the naughty ones so I could select for a naughty Blather Jazz.  I also built a style sheet generator for frequentflyers.org.  I designed the framework of the page, and then produced a random style sheet for the page.  I then tested in different browsers generating different font color compinations and stored all thas in a database.  Experiments.  http://web.archive.org/web/20020325013313/http://frequentflyers.org/  
+One other piece of the puzzle was a single page website I built for http://frequentlyers.org in 2003-2004.  I learned and practiced switching content through DOM, so popular today.  This site is still working perfectly on the Wayback machine.  In 2003 when I put newArt to bed, the free JSP server went away, I stated to my friend Jim.renwick@goole.com, that I wanted to rework using Unicode.  He vaguely remembers this.  I'm quite clear.  That notion sat idle until January 2013.  I attended the Microstrategy World Conference in Las Vegas, when 2 guys from Facebook showed how they hacked javascript in MSTR.  What they did was fairly simple, based on what I knew from above experience, *but* the room fluttered in amazement.  I got steamed.  Which tells you something about me, I guess, literally thinking, I'll show these guys "hacked" javascript. Which I didn't do, but I'm showing you.   This is the history of my 30 years of work with the Random computer function. 
 
 
 
