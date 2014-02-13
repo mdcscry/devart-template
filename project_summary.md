@@ -4,7 +4,7 @@
 
 ###Create Or?: 
 ####Matthew Cryer - mdcscry
-<span class="mySpan" style="color:red;">Webkit</span>
+
 ###Desc:
 I use Unicode, Chrome, Webkit, js/css/html and the random function of javascript to generatively produce WebArt. 
 This is a Chrome experiment.  It is a restriction study in the sense that I've chosen to produce all code client side-modifying all and creating many objects including stylesheets through runtime DOM.  Nothing too fancy, that's the point.  The code is the proxy for the exhibition of Unicode splendor. I've created 10-15 engines with 100+ variants in 2013-2014.  The hope is to reveal this exploration through the remainder of the competition.
