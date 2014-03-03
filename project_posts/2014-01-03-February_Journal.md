@@ -2,9 +2,13 @@
  
  First, some backstory.  I’d created two new engines in the days preceding my finding the devart contest.  One combined large webkit stroke width and huge mayan glyphs.   I’d stumbled on the Mayan glyphs in the supplemental private use area A sectiont.  Without thinking, I had downloaded the Mayan font some weeks earlier from [this](http://users.teilar.gr/~g1951d/ “Ancient Font download Page") collection of ancient fonts. Combing through for signs of glyph life, I spotted the Mayan glyphs.  A combining system, this set has highly irregular glyph shapes.  Enlarging them and including the over-sized css webkit stroke width made for the most exciting visual designs I’d managed to get yet.
  
- [MayanExplosian](http://www.youtube.com/watch?v=RC6ucOHSFI4,"Mayan Explosian") (sound). 
+  * Mayan Explosian (sound)
  
- I was ha.p.py.  I took that engine and started rotating the large font divs, around all three axis creating Tripper.
+ [MayanExplosian](http://www.youtube.com/watch?v=RC6ucOHSFI4 "Mayan Explosian") 
+ 
+ I was ha.p.py.  I took that engine and started rotating the large font divs, around all three axis creating 
+
+  * Tripper
  
  [trippy](http://youtu.be/KMvKyON3C08 "Tripper").   
 
