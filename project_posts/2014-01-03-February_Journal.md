@@ -249,18 +249,23 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
 
 ####Thurs. February 26:
   * Decided I need some sound on my youtube slideshows. 
-   
-  * [SplatHeiroLine](http://www.youtube.com/watch?v=pQju-ncDoQI "SplatHeiroLine") (sound)
+  
+  * Splatheiroline (sound)
+  * [SplatHeiroLine](http://www.youtube.com/watch?v=pQju-ncDoQI "SplatHeiroLine") 
   
 ####Fri. February 27: 
   * worked three more loops  
   * Links included above except for this one
   
+  * Electrick Mandala (sound)
+   [Electrick Mandala](http://www.youtube.com/watch?v=8BENopqacUE "Electrick Mandala")
 
-  * [Electrick Mandala](http://www.youtube.com/watch?v=8BENopqacUE "Electrick Mandala") (sound)
-  * [Heiroline61](http://www.youtube.com/watch?v=D7YIvVRK4ik "Heiroline61") (sound)
-  * [Heiroline](http://www.youtube.com/watch?v=2OgLMcnzyWw "Heiroline")
-  * [Tripper](http://www.youtube.com/watch?v=KMvKyON3C08 "Tripper")
+  * Heiroline61 (sound)
+   [Heiroline61](http://www.youtube.com/watch?v=D7YIvVRK4ik "Heiroline61")
+   
+  * Heiroline
+   [Heiroline](http://www.youtube.com/watch?v=2OgLMcnzyWw "Heiroline")
+
   
 
 ####Sun. March 2: 
