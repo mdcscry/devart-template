@@ -1,4 +1,4 @@
-![tripperalien](project_images/tripperalien.jpg?raw=true "Tripperalien")
+- ![tripperalien](../project_images/tripperalien.jpg?raw=true "Tripperalien")
 
 After entering the competition, I had to start studying.  Like the well-known horror of writing something you like, showing it to an editor you respect. I realized after signing up that I was a Unicode hack. 
 
