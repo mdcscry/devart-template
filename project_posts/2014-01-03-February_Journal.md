@@ -247,7 +247,6 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
    [Byzantia](http://www.youtube.com/watch?v=8BENopqacUE "Byzantium Music Symbols"). 
   
 
-
 ####Wed. February 25:
   * Hieroglyphics day.  Again with degnerator1.  Created a pretty,refined look with no messiness Heiroline.
   * Then blew out the fill width to create heirolinesplat.
@@ -257,7 +256,7 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * Decided I need some sound on my youtube slideshows. 
   
   * Splatheiroline (sound)
-  * [SplatHeiroLine](http://www.youtube.com/watch?v=pQju-ncDoQI "SplatHeiroLine") 
+   [SplatHeiroLine](http://www.youtube.com/watch?v=pQju-ncDoQI "SplatHeiroLine") 
   
 ####Fri. February 27: 
   * worked three more loops  
