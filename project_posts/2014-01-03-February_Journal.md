@@ -224,7 +224,7 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * Back to Urdu.  Thought I’d see if the Saudi’s calligraphers had any bismullah’s I could coopt.  As an agnostic of christian cultural dissent, am I allowed to to do thi?  I don't know.
   * Found a font set that’s only bismullah.  Beauty.  However, its cheating by my own rules.  Font designer has overloaded the standard ascii128 characters with bismullahs.  128 of them.  Two font sets.
   * 256  bismullahs.  Should be enough.  But its cheating.  Not mapped to FDFD.  This could be partially solved with a bastard use of variation selectors!  Hack!
-  * ![Bism](../project_images/bism.jpg?raw=true "Bism")
+  ![Bism](../project_images/bism.jpg?raw=true "Bism")
   * No, I didn’t know that the entire Arab world uses this as its most important salutation.  1.5 billion people?
   * Used glyphmatic.us to produce graphics for my entry into corporate naming contest for our new badass Teradata datawarehouse.  I picked "Forest" for the random forest big data algorithm.  Team members are the Owls.  Here’s my artwork.
   ![Forest](../project_images/littleforest.jpg?raw=true "Forest") 
