@@ -1,6 +1,8 @@
+![tripperalien](project_images/tripperalien.jpg?raw=true "Tripperalien")
+
 After entering the competition, I had to start studying.  Like the well-known horror of writing something you like, showing it to an editor you respect. I realized after signing up that I was a Unicode hack. 
 
-First, some backstory.  I’d created two new engines in the days preceding my finding the devart contest.  One combined large webkit stroke width and huge mayan glyphs.   I’d stumbled on the Mayan glyphs in the supplemental private use area A section.  Without thinking, I had downloaded the Mayan font some weeks earlier from [this](http://users.teilar.gr/~g1951d/ “Ancient Font download Page") collection of ancient fonts. Combing through for signs of glyph life, I spotted the Mayan glyphs.  A combining system, this set has highly irregular glyph shapes.  Enlarging them and including the over-sized css webkit stroke width made for the most exciting visual designs I’d managed to get [yet](http://youtu.be/RC6ucOHSFI4,"Mayan Explosian") (sound).  I was ha.p.py.  I took that engine and started rotating the large font divs, around all three axis.  This created [trippy](http://youtu.be/KMvKyON3C08 "Tripper").   
+First, some backstory.  I’d created two new engines in the days preceding my finding the devart contest.  One combined large webkit stroke width and huge mayan glyphs.   I’d stumbled on the Mayan glyphs in the supplemental private use area A sectiont.  Without thinking, I had downloaded the Mayan font some weeks earlier from [this](http://users.teilar.gr/~g1951d/ “Ancient Font download Page") collection of ancient fonts. Combing through for signs of glyph life, I spotted the Mayan glyphs.  A combining system, this set has highly irregular glyph shapes.  Enlarging them and including the over-sized css webkit stroke width made for the most exciting visual designs I’d managed to get [yet](http://youtu.be/RC6ucOHSFI4,"Mayan Explosian") (sound).  I was ha.p.py.  I took that engine and started rotating the large font divs, around all three axis creating Tripper [trippy](http://youtu.be/KMvKyON3C08 "Tripper").   
 
 Both of these finds resulted from a re-start of my work on the glyphmatic.us after 5 months off.  The great Boulder floods of 2013 bombed my basement and I lost the mental space to work.  Now, it could be said that picking the edge finish on the new vanity purchased to replace the previously perfectly good vanity has its charm and benefits to marital relations (bullnose), but finally, I was pumped again for the right reasons..  Entranced in my little dev-ecstasy, I stumbled across this contest on metafilter. 
 
@@ -8,14 +10,14 @@ This isn’t a truly web-based  project, but I do want people to see the glyphs.
 
 Looking back at my web history for February shows I was running the experiments pretty regularly.  I had been stringing them all together using meta-refresh.  As I was going along, I was updating and fixing--pure mindless art fun.  An engine can be tweaked a 1000 different ways and any different font-set applied.  My formal website engine is a little more challenging (not mindless art fun) to add to, so this stringing together was an easy way to see all the experiments and a simple path to create never-ending, never repeating looping computer-made art. I imagine glyphmatic.Us on display permanently, randomly producing the worlds glyphs.  The computer makes the art, not the people.  I call it associative disorder art. Also, offsourcing. 
  
-My euphoria of getting back to it and finding something exciting was covering-up the utter dismay I was feeling about glyphmatic.us.  It looked good in XP Chrome and nowhere else. In Chrome on windows 7 and 8 large skewed objects disappear on fullscreen. My reduced fontset wasn’t appearing in new windows machines in a native font install, either.  I needed to do significant reworking and debugging. Many glyphs weren't appearing in Android.  I reduced the glyph set (again)--remaining unfinished but better. I finally checked on i-products at the local blue box and was pleasantly surprised..  Writing for webkit on Windows ports well to Android and Safari.  But in the end, I'm still limited in my fonting(verb); its not the whole experience of Unicode.  That’s why I need the Barbicon.  
+My euphoria of getting back to it and finding something exciting was covering-up the utter dismay I was feeling about glyphmatic.us.  It looked good in XP Chrome and nowhere else. In Chrome on windows 7 and 8 large skewed objects disappear on fullscreen. My reduced fontset wasn’t appearing in new windows machines in a native font install, either.  I needed to do significant reworking and debugging. Many glyphs weren't appearing in Android.  I reduced the glyph set (again)--remaining unfinished but better. I finally checked on i-products at the local blue box and was pleasantly surprised..  Writing for webkit on Windows ports well to Android and Safari.  But in the end, I'm still limited in my fonting(verb); its not the whole experience of Unicode.  That’s why I need the Barbicon's walls.  
 
-Withn’t a lick of further ado, the February Journal:
+Withn’t a lick of further ado, the February web history journal:
 
-####Feb 3rd.
-  * Glyphmatic.us runs local all night with from starting with flasher1.
+####Mon. February 3:
+  * Glyphmatic.us runs local all night with from starting with flasher1. 
 
-####Feb 4th
+####Tues. Feb 4:
   * Review filters available-Looking for Emboss
   * Reviewed material about embedding fonts in webserver
   * Reviewed AWS approach to embedded font
@@ -31,7 +33,7 @@ Withn’t a lick of further ado, the February Journal:
   * Discovered the Maya script in supplemental area
   * Got stoked.  
 
-####Feb 5th
+####Wed. February 5:
   * It appears around 10:30 in the morning, my attention was diverted from actual work and I downloaded the new tailu font.
   * I see around this time I implemented the balijavatibet font selection.  Created new engine. Need to rework and make individual or just balijava
   * No pictures of this..not very good?  Used same engine with byzantine musical notes.  Interesting design engine for “Musical” art.  Notes look like notes but are obviously different.
@@ -44,7 +46,7 @@ Withn’t a lick of further ado, the February Journal:
   * Made a Tangine.
   * Took new Maya engine and hooked in MPH 2B Damase Unicode font, which has an unusual non-standard font stroke.  Not as unusual as Maya but unique.  I plugged into the large glyph engine but then pushed it into a quad glyph presentation standard engine.  The glyph stroke and the sets available in MPH 2B Damase are neat.O.
   
-####Feb 6th 
+####Thurs. February 6: 
   * Hooked the Yi Radicals into the maya flasher39 engine.  More straight line, but still non-standard.
   * Still testing end to end run.  Adding in all these additions to flasher27 and flasher39 engines.
   * Implemented HSLA random color function.  C.a.n.t. believe I waited so long.
@@ -52,9 +54,9 @@ Withn’t a lick of further ado, the February Journal:
   * found desk to buy(flood related)
   * Looks like I spotted the announcement for the contest on Metafilter  sometime around 8pm.
   * Hit github at 8:21pm
-  * Worked getting set up till 1:15, read Unicode chronology and history again before  going to bed.  Ladies and gentlemen, he’s a hack.
+  * Worked getting set up till 1:15, read Unicode chronology and history again before going to bed.  Ladies and gentlemen, still a hack.  But a hack with pretty colors.
   
-####Sat Feb 8th
+####Sat. February 8:
   * Had spoken to co-worker zedi about collaboration with designer brother in Karachi. Had shown him Maya Flasher39 and flasher27. He liked.  Mentioned his brother might be interested in doing something with the images.  Aha!  I thought I’d study my previous attempts with Arabic. Show him I meant businesss.
   * Got full glyph set prepared.
   * Tried cam studio video capture software.  Not too good.
@@ -69,7 +71,7 @@ Withn’t a lick of further ado, the February Journal:
   * Looks like this is about when I get pissed my site is so screwed up.
   * Banged on Github until 12:00am.  Think I figgerd it out.  Geez.  Oh, source code control.
   
-####Sun Feb 9th
+####Sun. February 9:
   * Stayed away from computer except to check weather until evening.
   * End to end testing ran successfully all day.  Computer fan a runnin.  
   * Checked the NOAA forecast discussion multiple times.  Must a been weather.
@@ -80,7 +82,7 @@ Withn’t a lick of further ado, the February Journal:
   * Has to be reduced.  Multiple glyphs not appearing on most standard platforms.
   * Also started research on why glyphs disappear under certain circumstances.
   
-####Mon Feb 10th
+####Mon. February 10:
   * Apparently I’m looking for jobs in Kerala.  Mighty interesting society that.
   * Sent Zedi screen shots.
   * Looked at css-background transparency properties.  Key to flying glyphs and many other features‽
@@ -88,7 +90,7 @@ Withn’t a lick of further ado, the February Journal:
   * reviewed line-spacing and line-height css properties …again
   * Banged on the site till midnight.  Goodnight.
   
-####Tues Feb 11th
+####Tues. Feb 11:
   * Found this http://www.britishmuseum.org/research/collection_online/collection_object_details/collection_image_gallery.aspx?assetId=1067319&objectId=3402039&partId=1
   * My People!
   * Figure that gives me a tent of an artistic tradition to put my sleepsack under, but further search for a “school” of letter art, not so much.
@@ -123,7 +125,7 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * Pivot to freebaseAPI and finished by visiting Barbican site falling asleep to dreams of whirld travel. 
   * Woke up 4:21am refreshed glyphmatic.us.  Not normal.
   
-####Thurs Feb 13
+####Thurs Feb 13:
   * Checked out a couple of competitors sites.  Love all the ideas.  Wonder about my little simple programs amidst the hoopla of social interaction and wearable computing.  
   * Stumbled on 3-d jewelry and other stuff site.  Head blows up.  What is glyphmatic.us?  What does it matter? The projects described in devart and this 3d printing gnoo-bender we’re on doesn’t inspire confidence in my project’s rising to the proper whiz bang level I think is probably going to win this thing..  Spose I’ve got to hold to the importance of UNICODE in everything we do to drive a context deeper than the super-fun and estimable sensual titillation associated with using a computer to paint in a new way or mapping bodies into computers with wearable computing, or using future enfolding head attachments, or making music remotely, transiently with others from everywhere, everywhen.  Hard to know whether to keep doing…but I guess I was doing before…so why stop…until I’m done.  I go to art museums and see the crazy, and I mean literally obsessive compulsive craziness all over the walls.  If I’m not obsessing about the font stroke color vr the fill color combined with background color…am I even doing it ..right?
   * unicode project could be an encyclopedia
@@ -132,7 +134,7 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * I also need to confirm the name of confirmation bias.   I have that.
   * Late I see I hit devart site and went looking at the openCV and findcontours function.  Love. So many fundamentally astonishing graphics packages to choose from.  Instead, I live in the browser. I'd like to turn this into a webgl app.  But the curve has been too steep in combination with the Unicode learning.  Maybe with some extra spare time between now and July..  Although,  I’m not sure motoring through a 3-d environment full of glyphs is really all that appealing.  I’ve been looking at HTML 5 and I feel like I can do what I need without it.  Still reviewing.
   
-#####Fri. February 14th
+#####Fri. February 14:
   * Made it to 9:17am before I began thinking about something other than work.  Hearts, I could make the wife a cheesy heart glyphmatic.  Went to codepoints..started…didn’t finish.  Putz.
   * Ended up at Bodewyn’s website.  Lotsa neat things on the innertubes.
   * Everybody is on github.  Where have I been?
@@ -159,29 +161,29 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * Downloaded Osmanya font
   * Ordered the picture and canvas banner finally.
   
-####Sun.-Tues. Feb 16-18:
+####Sun.-Tues. February 16-18:
   * Nothing
   * Late Tuesday I came back to it with some reviewing of Alan Wood website.  Mostly South Asian.
   * Han consolidation effort is complex political and vast.  My goodness.
 
-####Wed. Feb 19:
+####Wed. February 19:
   * Webkit animation duration is first item upon re-up.
   * Looked at Vai tripper (flasher 39)  yummy
 
-####Thurs. Feb 20:
+####Thurs. February 20:
   * It appears I worked all day.  Unfortunate.
   * Still not synched to front page of devart.
   * Full Urdu.  Bismullah. Nastaleeq calligraphy.  All night.
   * Only found 4 fonts that display FDFD.  Gorgeous.
 
-####Fri. Feb 21:
+####Fri. February 21:
   * Working on font coverage.  Nailed Chakma, Tai Viet, meetei mayek.  I’m the bitchenist (bitchinest?) font-finder in my kitchen this evening.  I am from Southern California, my patois includes bitchen and bitchin.
   * Took a trip to chrome experiments to help stimulate and depress me.  So freaking great.
   * Suddenly at 11:30 at night I needed to know the difference between javascript switch and case statements.  I reckon we should all review our web history more often.  A back-illuminated neo-manuscript in cookie crumbs and snail trails.  And Spiral Conch Shells, or so the Tibetan’s tell me.  
   * What happens if this show went to Bejing and I eliminate all simplified.  And mixed in a bunch of Hiragana.  Trouble. I'm trouble. 
   * Do people searching for Urdu fonts get put on the watch list?  “I only wanted to find a Bismullah glyph, man!”
 
-####Sat Feb 22:
+####Sat. February 22:
   * Studied CSS perspective transform 
   * Looked at svg rendering.  Never heard of it—I mean heard of SVG of course but not using it as a web renderer.. Betamax? But definitely another awe-someness that I could be but amn’t doing. So many.  Used to be there was just paint, clay and stone.
   * Had body work and crazy body worker says, what about the sacred om.  All this time with the Bismullah and no sacred om?  Yes, calling me out.
@@ -229,7 +231,8 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   
 ####Tues. February 24:
   * Procrastination is also pernicious.  Did not get any editing done on snailthread.   Weak minds seldom prevail.
-  * Took degenererator1b which had been 8 divs over a container div and reduced it to 2divs to make it less messy.  Also changed color pallet.  A picture of which, no serious music lover should be without.  At least serious music lovers who really dig music from late [Byzantia](http://www.youtube.com/watch?v=8BENopqacUE "Byzantium Music Symbols").  Rockin.     * Mentioned above Feb 5th.
+  * Took degenererator1b which had been 8 divs over a container div and reduced it to 2divs to make it less messy.  Also changed color pallet.  A picture of which, no serious music lover should be without.  At least serious music lovers who really dig music from late [Byzantia](http://www.youtube.com/watch?v=8BENopqacUE "Byzantium Music Symbols").  Rockin.
+  * * Mentioned above Feb 5th.
 
 ####Wed. February 25:
   * Hieroglyphics day.  Again with degnerator1.  Created a pretty,refined look with no messiness Heiroline.
@@ -247,7 +250,6 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * [Electrick Mandala](http://www.youtube.com/watch?v=8BENopqacUE "Electrick Mandala") (sound)
   * [Heiroline61](http://www.youtube.com/watch?v=D7YIvVRK4ik "Heiroline61") (sound)
   * [Mayan Explosian](http://www.youtube.com/watch?v=RC6ucOHSFI4 "Mayan Explosian") (sound)
- 
   * [Heiroline](http://www.youtube.com/watch?v=2OgLMcnzyWw "Heiroline")
   * [Tripper](http://www.youtube.com/watch?v=KMvKyON3C08 "Tripper")
 
@@ -255,8 +257,3 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * Submit journal for February.  
   * Not sure the whole owls idea was that well received‽
   * As always, you can hit glyphmatic.us.  Let it run.  Its want to run all the time.  Trust me.
-
-
-
-
-
