@@ -226,7 +226,9 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * 256  bismullahs.  Should be enough.  But its cheating.  Not mapped to FDFD.  This could be partially solved with a bastard use of variation selectors!  Hack!
   * ![Bism](../project_images/bism.jpg?raw=true "Bism")
   * No, I didn’t know that the entire Arab world uses this as its most important salutation.  1.5 billion people?
-  * Used glyphmatic.us to produce graphics for my entry into corporate naming contest for our new badass Teradata datawarehouse.  I picked "Forest" for the random forest big data algorithm.  Team members are the Owls.  Here’s my artwork.  ![Forest](../project_images/littleforest.jpg?raw=true "Forest") ![Owls](../project_images/littleowls.jpg?raw=true "Owls")
+  * Used glyphmatic.us to produce graphics for my entry into corporate naming contest for our new badass Teradata datawarehouse.  I picked "Forest" for the random forest big data algorithm.  Team members are the Owls.  Here’s my artwork.
+  ![Forest](../project_images/littleforest.jpg?raw=true "Forest") 
+  ![Owls](../project_images/littleowls.jpg?raw=true "Owls")
 
 ####Mon. February 23:
   * Added hieroglyphics and 1 mayan font to world symbols quad and mucked around with border.  For some reason the border not being set was causing terrible kerning.   Hadn’t seen that before…but fixed it with a border=1. 
