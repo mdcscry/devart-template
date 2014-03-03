@@ -1,8 +1,12 @@
-- ![tripperalien](../project_images/tripperalien.jpg?raw=true "Tripperalien")
-
-After entering the competition, I had to start studying.  Like the well-known horror of writing something you like, showing it to an editor you respect. I realized after signing up that I was a Unicode hack. 
-
-First, some backstory.  I’d created two new engines in the days preceding my finding the devart contest.  One combined large webkit stroke width and huge mayan glyphs.   I’d stumbled on the Mayan glyphs in the supplemental private use area A sectiont.  Without thinking, I had downloaded the Mayan font some weeks earlier from [this](http://users.teilar.gr/~g1951d/ “Ancient Font download Page") collection of ancient fonts. Combing through for signs of glyph life, I spotted the Mayan glyphs.  A combining system, this set has highly irregular glyph shapes.  Enlarging them and including the over-sized css webkit stroke width made for the most exciting visual designs I’d managed to get [yet](http://youtu.be/RC6ucOHSFI4,"Mayan Explosian") (sound).  I was ha.p.py.  I took that engine and started rotating the large font divs, around all three axis creating Tripper [trippy](http://youtu.be/KMvKyON3C08 "Tripper").   
+ ![tripperalien](../project_images/tripperalien.jpg?raw=true "Tripperalien")After entering the competition, I had to start studying.  Like the well-known horror of writing something you like, showing it to an editor you respect. I realized after signing up that I was a Unicode hack. 
+ 
+ First, some backstory.  I’d created two new engines in the days preceding my finding the devart contest.  One combined large webkit stroke width and huge mayan glyphs.   I’d stumbled on the Mayan glyphs in the supplemental private use area A sectiont.  Without thinking, I had downloaded the Mayan font some weeks earlier from [this](http://users.teilar.gr/~g1951d/ “Ancient Font download Page") collection of ancient fonts. Combing through for signs of glyph life, I spotted the Mayan glyphs.  A combining system, this set has highly irregular glyph shapes.  Enlarging them and including the over-sized css webkit stroke width made for the most exciting visual designs I’d managed to get yet.
+ 
+ [MayanExplosian](http://www.youtube.com/watch?v=RC6ucOHSFI4,"Mayan Explosian") (sound). 
+ 
+ I was ha.p.py.  I took that engine and started rotating the large font divs, around all three axis creating Tripper.
+ 
+ [trippy](http://youtu.be/KMvKyON3C08 "Tripper").   
 
 Both of these finds resulted from a re-start of my work on the glyphmatic.us after 5 months off.  The great Boulder floods of 2013 bombed my basement and I lost the mental space to work.  Now, it could be said that picking the edge finish on the new vanity purchased to replace the previously perfectly good vanity has its charm and benefits to marital relations (bullnose), but finally, I was pumped again for the right reasons..  Entranced in my little dev-ecstasy, I stumbled across this contest on metafilter. 
 
@@ -216,12 +220,12 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   * Back to Urdu.  Thought I’d see if the Saudi’s calligraphers had any bismullah’s I could coopt.  As an agnostic of christian cultural dissent, am I allowed to to do thi?  I don't know.
   * Found a font set that’s only bismullah.  Beauty.  However, its cheating by my own rules.  Font designer has overloaded the standard ascii128 characters with bismullahs.  128 of them.  Two font sets.
   * 256  bismullahs.  Should be enough.  But its cheating.  Not mapped to FDFD.  This could be partially solved with a bastard use of variation selectors!  Hack!
-  * ![But implemented nonetheless](project_images/bism.jpg?raw=true "Bism")
+  * ![Bism](../project_images/bism.jpg?raw=true "Bism")
   * No, I didn’t know that the entire Arab world uses this as its most important salutation.  1.5 billion people?
-  * Used glyphmatic.us to produce graphics for my entry into corporate naming contest for our new badass Teradata datawarehouse.  I picked "Forest" for the random forest big data algorithm.  Team members are the Owls.  Here’s my artwork.  ![Forest](project_images/forest.jpg?raw=true "Forest") ![Owls](project_images/owls.jpg?raw=true "Owls")
+  * Used glyphmatic.us to produce graphics for my entry into corporate naming contest for our new badass Teradata datawarehouse.  I picked "Forest" for the random forest big data algorithm.  Team members are the Owls.  Here’s my artwork.  ![Forest](../project_images/littleforest.jpg?raw=true "Forest") ![Owls](../project_images/littleowls.jpg?raw=true "Owls")
 
 ####Mon. February 23:
-  * Added hieroglyphics and 1 mayan font to world symbols quad and mucked around with border.  For some reason the border not being set was causing terrible kerning.   Hadn’t seen that before…but fixed it with a border=1. [SymbolQuad](http://www.youtube.com/watch?v=G2LVYZbcbuA "SymbolQuad") 
+  * Added hieroglyphics and 1 mayan font to world symbols quad and mucked around with border.  For some reason the border not being set was causing terrible kerning.   Hadn’t seen that before…but fixed it with a border=1. 
   * Talked with Ran Wei, coworker of Chinese descent.  We’ve exchanged pleasantries through the work years.  Wanted his input about Han Glyphs I’d figgered to use.  He confirmed the accuracy of most, although I didn’t get infinity correct.  Not sure he knew what to make of it, kept saying interesting.  But…funny story.  At the urinal, (good place for a conversation about devart and Unicode) I bring this topic up cause I want his input.  I don’t normally hti people up for advice at the urinal, at least I didn’t. After my intorduction, he part questioningly responds “Unicode?”  But not in that awesome unknowing way like “um wtf dude‽”  More like, “did you just say Unicode?”  He responds as I fully expected he would, “I work on the Unicode project”.   
   * My people!
   * I did not expect him to say that.
@@ -231,8 +235,12 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
   
 ####Tues. February 24:
   * Procrastination is also pernicious.  Did not get any editing done on snailthread.   Weak minds seldom prevail.
-  * Took degenererator1b which had been 8 divs over a container div and reduced it to 2divs to make it less messy.  Also changed color pallet.  A picture of which, no serious music lover should be without.  At least serious music lovers who really dig music from late [Byzantia](http://www.youtube.com/watch?v=8BENopqacUE "Byzantium Music Symbols").  Rockin.
-  * * Mentioned above Feb 5th.
+  * Took degenererator1b which had been 8 divs over a container div and reduced it to 2divs to make it less messy.  Also changed color pallet.  A picture of which, no serious music lover should be without.  At least serious music lovers who really dig music from late Byzantia.
+  * Mentioned above Feb 5th.
+  
+   [Byzantia](http://www.youtube.com/watch?v=8BENopqacUE "Byzantium Music Symbols"). 
+  
+
 
 ####Wed. February 25:
   * Hieroglyphics day.  Again with degnerator1.  Created a pretty,refined look with no messiness Heiroline.
@@ -241,17 +249,19 @@ When this tse-tse fly of a line hit, UTF-8, it blew up because UTF codes ctl-cha
 
 ####Thurs. February 26:
   * Decided I need some sound on my youtube slideshows. 
+   
   * [SplatHeiroLine](http://www.youtube.com/watch?v=pQju-ncDoQI "SplatHeiroLine") (sound)
-  * [SymbolQuad](http://www.youtube.com/watch?v=G2LVYZbcbuA "SymbolQuad") (sound)
   
 ####Fri. February 27: 
   * worked three more loops  
   * Links included above except for this one
+  
+
   * [Electrick Mandala](http://www.youtube.com/watch?v=8BENopqacUE "Electrick Mandala") (sound)
   * [Heiroline61](http://www.youtube.com/watch?v=D7YIvVRK4ik "Heiroline61") (sound)
-  * [Mayan Explosian](http://www.youtube.com/watch?v=RC6ucOHSFI4 "Mayan Explosian") (sound)
   * [Heiroline](http://www.youtube.com/watch?v=2OgLMcnzyWw "Heiroline")
   * [Tripper](http://www.youtube.com/watch?v=KMvKyON3C08 "Tripper")
+  
 
 ####Sun. March 2: 
   * Submit journal for February.  
