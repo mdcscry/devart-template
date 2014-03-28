@@ -29,8 +29,15 @@ Made a tiny effort to alter Spirali (http://glyphmatic.us/?i=03) to use translat
 
 Mar 14-18
 
-Fiber arts time.  Made D&D dice bag for the boy.  []
+Fiber arts time.  Made D&D dice bag for the boy. 
+
+http://glyphmatics/photo/fiberarts.jpg
+
+
 More Fiber arts.  OM specific symbol quad for friends 60th birthday
+
+http://glyphmatics/photo/forcrop.jpg
+
 	Learned to use the narrow hammer foot on my sewing maching.  Not sure how dev art turned into sewing.  I made a decision around this time, to make the art that I wanted to make.  I could have spent time trying to implement some falutin software or another, to enhance the project.  But that’s not what was moving me.  So I did the fiber arts projects that was.  Translating Glyphmatic.us into an artifict outside of the computer, is one of my goals.  I have a long history of sewing and fiber arts projects.  I want each piece to be one of a kind.  Sending out for prints was a boondoggle.  I didn’t like either of the tests I sent out for…pretty expensive failures.  Sooooo, I’ve gone native.  Plus I like the Arts and Crafts nature of 1-offs.  Yes, I like the Roadshow.
 Mar 19th
 Added the Ik Onkar and the Bengali Oms, anchor, ankh, and a few others to Symbol quad. Zarathustrianism has long been an interest.  I see the Faravhar is.not included in Unicode.  Enhancement request!  Still need to finish with Alpha and Omega.  
