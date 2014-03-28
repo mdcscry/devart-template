@@ -7,7 +7,7 @@
             "chrome"
         ],
         "toolkits": [
-            "webkit"
+            "webkit","noto"
         ]
     }
 }
