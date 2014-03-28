@@ -1,0 +1,140 @@
+
+
+
+
+<html>
+<head>
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta http-equiv="refresh" content="300;url=flasher13.htm">
+</head>
+
+<div id="myid2_bck" style="position:absolute;height:100%;width:100%;top:0%;left:0%;background-color:#000000;font-size: 600px;color:  #222222; text-align:center;vertical-align: middle; ">
+<div id="myid2" style="position:absolute;left:40%;top:0%;background-color:#000000;font-size: 300px;color:  #EEEEEE; text-align:center;vertical-align: middle;
+	" onClick='antiRotate();'>&#9693;</div>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+
+var element = document.getElementById("myid2");
+var element_bg = document.getElementById("myid2_bck");
+var Opa;
+
+var duration = 5000; /* fade duration in millisecond */
+var in_duration = 5000; /* fade duration in millisecond */
+var hidtime = 1000; /* time to stay hidden */
+var showtime = 9000; /* time to stay visible */
+
+var textChangeRate1=10000;
+var bgColChangeRate=100000;
+var fontChangeRate=50000;
+
+function startRotate(y){
+   var spin10 = "rotate(" + y + "deg)";
+  element.style.webkitTransform = spin10;
+}
+
+  function antiRotate () {
+     for (var y=0;y<361;y+=.01){
+     var spin10 = "rotate(" + y + "deg)";
+     setTimeout("startRotate("+ y +")", 3000);
+    }
+ }
+
+
+
+function SetOpa(Opa) {
+
+  element.style.opacity = Opa;
+  element.style.MozOpacity = Opa;
+  element.style.KhtmlOpacity = Opa;
+  element.style.filter = 'alpha(opacity=' + (Opa * 100) + ');';
+}
+
+
+
+function fadeOut() {
+  for (i = 0; i <= 1; i += 0.01) {
+  var Opa=1-i;
+    setTimeout("SetOpa(" + Opa +")", i * duration);
+  }
+
+   setTimeout("FadeIn()", (in_duration + hidtime));
+}
+
+function FadeIn() {
+  for (i = 0; i <= 1; i += 0.01) {
+    setTimeout("SetOpa(" + i +")", i * duration);
+  }
+   changeContent_invs();
+   changeContent();
+   setTimeout("changeContent_vs()",100);
+   setTimeout("fadeOut()", (duration + showtime));
+   changeColor();
+
+}
+
+function changeContent_invs(){
+  //   element.style.color=element.style.backgroundColor;
+     element.style.visibility="hidden";
+
+}
+function changeContent(){
+       element.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+}
+function changeContent_vs(){
+     element.style.visibility="visible";
+}
+
+function changeColor(){
+	var elem6_bg_color_chg=Math.random()*bgColChangeRate;
+	var elem6_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+	window.setInterval(function(){
+	   element.style.backgroundColor= elem6_bg_color;
+	   element_bg.style.backgroundColor= elem6_bg_color;
+	   },elem6_bg_color_chg);
+
+	window.setInterval(function(){
+		element.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate);
+}
+
+var mycolors=['#FF7400','#BF710','#A64B00','#FF9640','#FFB273','#FFAA00','#BF8F30','#A66F00','#FFBF40','#FFD073','FF0000','BF3030','A60000','FF4040','FF7373','009999'
+,'#1D7373','#006363','#33CCCC','#5CCCCC' ];
+
+var myarray=[32
+//line type symbols
+,9673,9675,9676,9677,9678,9679,9680,9681,9682,9683,9684,9685,9686,9687,9688,9689,9690,9691,9692,9693,9694,9695,9696,9697,9711,8960,8977,8986,9004,9022,9021,9033,9055,9061,9077,8709,2218,2219,8734
+,8853,8854,8855,8856,8857,8858,8859,8860,8861,9991,8853,8854,8855,8856,8857,8858,8859,8860,8861,1006
+];
+
+
+
+fadeOut();
+window.setInterval(function() {antiRotate();},15000);
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

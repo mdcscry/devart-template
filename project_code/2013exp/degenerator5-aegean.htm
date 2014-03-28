@@ -1,0 +1,186 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=degenerator5-gratings.htm">
+<TITLE>5.DeGenerator-gratings</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+BODY { -webkit-transition-property: background-color;
+	      -webkit-transition-duration: 10s;
+	 }
+DIV   {
+	      -webkit-transition-property: all;
+	      -webkit-transition-duration: 10s;
+
+    padding:0%;
+    margin:0%;
+    background:#FFFFFF;
+    font-size: 325px;
+    color:  #000000;
+    left: 1.5%;
+    top:-25%;
+    overflow:hidden;
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;font-family:Quivira,'Arial Unicode MS','Akshar Unicode',Code2000,Symbola,'Microsoft New Tai Lue'
+,'Tuladha Jejeg','MPH 2B Damase','Arial Unicode MS','Lanna Unicode UI',Sun-ExtA;">
+
+
+
+<script type="text/javascript">
+
+var fontChangeRate=2000;
+
+var mycolors=[
+'#330066',
+'#333366',
+'#330033',
+'#330066',
+'#333366',
+'#330033',
+'#660066',
+'#330066',
+'#333366',
+'#000033',
+'#330099'
+];
+
+
+
+var myarray=[
+65826,65827,65828,65829,65830,65831,65832,65833,65834,65835,65836,65837,65838,65839
+,65840,65841,65842,65843,65823,65822,65821,65820,65819,65818,65817,65816,65815,65814
+,65813,65812,65811,65810,65809,65808,65807,65806,65805,65804,65803,65802,65801,65800
+,65799,65794,65792
+
+,5761,5762,5763,5764,5765,5766,5767,5768,5769,5770,5780,5779,5778,5777
+,6278,8762,8886,8887,8942,8943,9007,9107,9739,9738,10568,10746,10747,10714
+,10715,10856,10857,10872,10871,11623,10202,10203
+
+];
+
+document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+//container div
+
+var containerCount=12;
+var containerId=[];
+
+for (containerCounter=1;containerCounter<=containerCount;containerCounter++){
+	containerName='container' + containerCounter;
+	containerId[containerCounter] = document.createElement("div");
+	document.body.appendChild(containerId[containerCounter]);
+	containerId[containerCounter].id=containerName+'-div0';
+	containerId[containerCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+	//style
+	containerId[containerCounter].style.position='relative';
+	containerId[containerCounter].style.cssFloat='left';
+	containerId[containerCounter].style.opacity=1;
+	containerId[containerCounter].style.width='385px';
+	containerId[containerCounter].style.textAlign='center';
+	containerId[containerCounter].style.verticalAlign='middle';
+	containerId[containerCounter].style.borderRadius='15px';
+	containerId[containerCounter].style.borderRadius='15px';
+	containerId[containerCounter].style.webkitFilter= 'saturate('+ Math.round(Math.random()*200) +'%)';
+var divId=[];
+
+
+for (divCounter=1;divCounter<=4;divCounter++){
+ elementName=containerName + '-div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+ //alert(divId[divCounter].id);
+containerId[containerCounter].appendChild(divId[divCounter]);
+divId[divCounter].id=elementName;
+divId[divCounter].style.position='absolute';
+divId[divCounter].style.cssFloat='none';
+divId[divCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+divId[divCounter].style.opacity=.65;
+
+//divId[divCounter].webkit.transform=90;
+divId[divCounter].style.top='3%';
+divId[divCounter].style.height='94%';
+divId[divCounter].style.left='8%';
+divId[divCounter].style.width='335px';
+divId[divCounter].style.borderRadius='15px';
+
+
+}
+}
+
+
+
+
+
+///////////////////Container and Basenode Backgroud
+			window.setInterval(function(){
+
+				rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+				rndDivChild=Math.round(Math.random()*3+1);
+
+				containerElementName='container' + rndDivContainer+'-div0';
+				baseElementName='container' + rndDivContainer+'-div4';
+
+				 container=document.getElementById(containerElementName);
+			     baseNode=document.getElementById(baseElementName);
+
+				  try {
+				  	  container.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				  	  container.style.webkitFilter= 'saturate('+ Math.round(Math.random()*200) +'%)';
+				  	  baseNode.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				   } catch ( e ) {
+				      alert("Error: " + e.description + 'Value container: ' + containerElementName + 'basenode: ' + baseElementName  );
+		  			 }
+		},Math.random()*fontChangeRate);
+
+
+
+//////////////////////Node HTML
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*3+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+						     	node.style.webkitFilter= 'saturate('+ Math.round(Math.random()*200) +'%)';
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + elementName );
+				  			 }
+		},Math.random()*fontChangeRate+10000);
+
+//////////////////////Node Color
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*3+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + elementName );
+				  			 }
+		},Math.random()*fontChangeRate);
+
+//////////////////////Body Background
+		window.setInterval(function(){
+		 		  try {
+		 		  	  document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		 		   } catch ( e ) {
+		 		      alert("Error: " + e.description + 'Value: ' + elementName );
+		   			 }
+		},Math.random()*fontChangeRate+20000);
+
+
+
+
+</script>
+</body></html>

@@ -1,0 +1,305 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=flasher31.htm">
+<TITLE>Pure Slow Single Fader</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+
+
+@-webkit-keyframes still
+{
+  0% {
+    -webkit-filter:   opacity(1) ;
+
+  }
+  100% {
+    -webkit-filter:   opacity(1)  ;
+
+  }
+
+}
+
+@-webkit-keyframes fadeOut
+{
+  0% {
+    -webkit-filter:    opacity(1) ;
+  }
+  100% {
+    -webkit-filter:    opacity(0)  ;
+  }
+
+}
+
+@-webkit-keyframes fadeIn
+{
+  0% {
+    -webkit-filter:     opacity(0) ;
+
+  }
+  100% {
+    -webkit-filter:  opacity(1)  ;
+
+  }
+
+}
+
+@-webkit-keyframes reverseBlur
+{
+  0% {
+    -webkit-filter:   blur(50px);
+
+  }
+  100% {
+    -webkit-filter:   blur(0px) ;
+
+  }
+}
+
+
+@-webkit-keyframes blur
+{
+  0% {
+    -webkit-filter:   blur(0px) ;
+  }
+  100% {
+    -webkit-filter:   blur(100px)  ;
+  }
+}
+
+DIV   {
+    position:absolute;
+    padding-top:0%;
+    left:0%;top:0%;
+    width:100%;height:100%;
+
+    font-size: 900px;
+    color:  #FFFFFF;
+    text-align:center;
+    vertical-align: middle;
+
+}
+
+#myid2_bck {
+	    position:absolute;
+	    padding-top:0%;
+	    left:0%;top:0%;
+	    width:100%;height:100%;
+
+	    font-size: 700px;
+	    color:  #FFFFFF;
+	    text-align:center;
+	    vertical-align: middle;
+      opacity: 1;
+
+}
+
+#myid2 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+}
+
+#myid2.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 20s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid2.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+#myid2.blur {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: blur;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+
+#myid2.still {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: still;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+}
+
+</STYLE>
+
+
+
+<body style="overflow: hidden;font-family:aegyptus,maya,akkadian,Quivira,Code2000,aegean,Sun-ExtA,'Akshar Unicode',Symbola,'Arial MS Unicode'
+,Code2002,Code2001;">
+<div id="myid2_bck"></div>
+<div id="myid2" >123</div>
+
+<script type="text/javascript">
+var elem2 = document.getElementById("myid2");
+var elem2_bg = document.getElementById("myid2_bck");
+
+var textChangeRate1=10000;
+var bgColChangeRate=100000;
+var fontChangeRate=30000;
+var fontSizeFactorMultiple=850;
+var fontSizeFactorAddOn=100;
+var animationPlayState=30000;
+
+
+function changeColor(){
+	var elem2_bg_color_chg=Math.random()*bgColChangeRate+40000;
+	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+	window.setInterval(function(){
+	   	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+	   elem2.style.background='transparent';
+	   elem2_bg.style.backgroundColor= elem2_bg_color;
+	   },elem2_bg_color_chg);
+
+	window.setInterval(function(){
+		elem2.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+}
+
+var mycolors=[];
+var colNum=21;
+
+setColor(Math.round(Math.random()*340),Math.round(Math.random()*800),Math.round(Math.random()*80),.3);
+setColor(Math.round(Math.random()*340),Math.round(Math.random()*800),Math.round(Math.random()*80),.3);
+setColor(Math.round(Math.random()*340),Math.round(Math.random()*800),Math.round(Math.random()*80),.3);
+setColor(Math.round(Math.random()*340),Math.round(Math.random()*800),Math.round(Math.random()*80),.3);
+
+function setColor(hue,sat,light,opa){
+
+for (colorCounter=1;colorCounter<=colNum;colorCounter++){
+var toSpliceColor='hsla('
++  Math.round(40*Math.random()+hue-20) + ','
++  Math.round(40*Math.random()+sat-20)+ '%,'
++ (Math.round(Math.random()*20)+light) + '%,'
++ (Math.random(opa)+.6	)
++ ')';
+//alert (toSpliceColor);
+
+mycolors.splice(1,0,toSpliceColor);
+}
+}
+
+var myarray=[//32,
+//heiroglyphics
+77952,78243,1002450,1002455
+,1002456,1002457,1002458,1002459,1002460,1002461,1002462,1002463,128846,4968,
+1002463,74143,74862,//,
+'62183;&#62458;&#62147','1002451;&#1002452','1002453;&#1002454',65609,65609,65750,127074,127024,67968,
+66023,66033,66005,66002,66001,
+//mayan faces
+
+62832,62833,62834,62835
+,62836,62837,62838,62839,62840,62841,62842,62843,62844,62845,62846,62847,62848,62849,62850,62851
+//,62852,62853,62854,62855,62856,62857,62858,62859,62860,62861
+//,62862,62863,62864,62865,62866,62867,62868,62869,62870,62871,62872,62873,62874,62875,62876,62877,62878,62879,62880,62881,62882,62883,62884,62885,62886,62887
+//,62888,62889,62890,62891,62892,62893,62894,62895,62896,62897,62898,62899,62900,62901,62902,62903,62904,62905,62906,62907,62908,62909,62910,62911,62912,62913
+//,62914,62915,62916,62917,62918,62919,62920,62921,62922,62923,62924,62925,62926,62927,62928,62929,62930,62931,62932,62933,62934,62935,62936,62937,62938,62939
+//,62940,62941,62942,62943,62944,62945,62946,62947,62948,62949,62950,62951,62952,62953,62954,62955,62956,62957,62958,62959,62960,62961,62962,62963,62964,62965
+//,62966,62967,62968,62969,62970,62971,62972,62973,62974,62975,62976,62977,62978,62979,62980,62981,62982,62983,62984,62985,62986,62987,62988,62989,62990,62991
+//,62992,62993,62994,62995,62996,62997,62998,62999,63000,63001,63002,63003,63004,63005,63006,63007,63008,63009,63010,63011,63012,63013,63014,63015,63016,63017
+//,63018,63019,63020,63021,63022,63023,63024,63025,63026,63027,63028,63029,63030,63031,63032,63033,63034,63035,63036,63037,63038,63039,63040,63041,63042,63043
+//,63044,63045,63046,63047,63048,63049,63050,63051,63052,63053,63054,63055,63056,63057,63058,63059,63060,63061,63062,63063,63064,63065,63066,63067,63068,63069
+//,63070,63071,63072,63073,63074,63075,63076,63077,63078,63079,63080,63081,63082,63083,63084,63085,63086,63087,63088,63089,63090,63091,63092,63093,63094,63095
+//,63096,63097,63098,63099,63100,63101,63102,63103,63104,63105,63106,63107,63108,63109,63110,63111,63112,63113,63114,63115,63116,63117,63118,63119,63120,63121
+//,63122,63123,63124,63125,63126,63127,63128,63129,63130,63131,63132,63133,63134,63135,63136,63137,63138,63139,63140,63141,63142,63143,63144,63145,63146,63147
+//,63148,63149,63150,63151,63152,63153,63154,63155,63156,63157,63158,63159,63160,63161,63162,63163,63164,63165,63166,63167,63168,63169,63170,63171,63172,63173
+//,63174,63175,63176,63177,63178,63179,63180,63181,63182,63183,63184,63185,63186,63187,63188,63189,63190,63191,63192,63193,63194,63195,63196,63197,63198,63199
+//,63200,63201,63202,63203,63204,63205,63206,63207,63208,63209,63210,63211,63212,63213,63214,63215,63216,63217,63218,63219,63220,63221,63222,63223,63224,63225
+//,63226,63227,63228,63229,63230,63231,63232,63233,63234,63235,63236,63237,63238,63239,63240,63241,63242,63243,63244,63245,63246,63247,63248,63249,63250,63251
+//,63252,63253,63254,63255,63256,63257,63258,63259,63260,63261,63262,63263,63264,63265,63266,63267,63268,63269,63270,63271,63272,63273,63274,63275,63276,63277
+//,63278,63279,63280,63281,63282,63283,63284,63285,63286,63287,63288,63289,63290,63291,63292,63293,63294,63295,63296,63297,63298,63299,63300,63301,63302,63303
+//,63304,63305,63306,63307,63308,63309,63310,63311,63312,63313,63314,63315,63316,63317,63318,63319,63320,63321,63322,63323,63324,63325,63326,63327,63328,63329
+//,63330,63331,63332,63333,63334,63335,63336,63337,63338,63339,63340,63341,63342,63343,63344,63345,63346,63347,63348,63349,63350,63351,63352,63353,63354,63355
+//,63356,63357,63358,63359,63360,63361,63362,63363,63364,63365,63366,63367,63368,63369,63370,63371,63372,63373,63374,63375,63376,63377,63378,63379,63380,63381
+//,63382,63383,63384,63385,63386,63387,63388,63389,63390,63391,63392,63393,63394,63395,63396,63397,63398,63399,63400,63401,63402,63403,63404,63405,63406,63407
+//,63408,63409,63410,63411,63412,63413,63414,63415,63416,63417,63418,63419,63420,63421,63422,63423,63424,63425,63426,63427,63428,63429,63430,63431,63432,63433
+//,63434,63435,63436,63437,63438,63439,63440,63441,63442,63443,63444,63445,63446,63447,63448,63449,63450,63451,63452,63453,63454,63455,63456,63457,63458,63459
+//,63460,63461,63462,63463,63464,63465,63466,63467,63468,63469,63470,63471,63472,63473,63474,63475,63476,63477,63478,63479,63480,63481,63482,63483,63484,63485
+//,63486,63487
+];
+
+elem2_bg.style.background=mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem2.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+//myAnimationArray=["noDisplay","blur","noDisplay","still"];
+
+var originalViewState="display";
+
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem2.className = originalViewState;
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+
+var changeViewState = "noDisplay";
+
+window.setInterval(function (){
+
+if (
+	elem2.className==originalViewState) {elem2.className =changeViewState;}
+
+else {
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem2.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState);
+
+changeColor();
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

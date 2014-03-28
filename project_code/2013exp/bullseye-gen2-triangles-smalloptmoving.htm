@@ -1,0 +1,241 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<TITLE>3.bullseye-gen1-triangles-smallopt</TITLE>
+<meta http-equiv="refresh" content="300;url=f2.htm">
+</head>
+
+
+<STYLE type="text/css">
+BODY { -webkit-transition-property: background-color;
+	      -webkit-transition-duration: 10s;
+	 }
+DIV   {
+	      -webkit-transition-property: background-color,color,border-color,border-width;
+	      -webkit-transition-duration: 10s,10s,10s,1s;
+
+
+    padding:0%;
+    margin:0%;
+    background:#FFFFFF;
+    font-size: 200px;
+    color:  #000000;
+    left: 0%;
+    top:10%;
+    overflow: hidden;
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;font-family:Quivira,'Arial Unicode MS','Akshar Unicode',Code2000,Symbola,'Microsoft New Tai Lue'
+,'Tuladha Jejeg','MPH 2B Damase','Arial Unicode MS','Lanna Unicode UI',Sun-ExtA;;">
+
+
+
+<script type="text/javascript">
+
+var fontChangeRate=2000;
+
+var mycolors=['#000000','#000080','#00008B','#0000CD','#0000FF','#006400','#008000','#008080','#008B8B','#00BFFF','#00CED1'
+,'#00FA9A','#00FF00','#00FF7F','#00FFFF','#00FFFF','#191970','#1E90FF','#20B2AA','#228B22','#2E8B57','#2F4F4F'
+,'#2F4F4F','#32CD32','#3CB371','#40E0D0','#4169E1','#4682B4','#483D8B','#48D1CC','#4B0082','#556B2F','#5F9EA0'
+,'#6495ED','#66CDAA','#696969','#696969','#6A5ACD','#6B8E23','#708090','#708090','#778899','#778899','#7B68EE'
+,'#7CFC00','#7FFF00','#7FFFD4','#800000','#800080','#808000','#808080','#808080','#87CEEB','#87CEFA','#8A2BE2'
+,'#8B0000','#8B008B','#8B4513','#8FBC8F','#90EE90','#9370DB','#9400D3','#98FB98','#9932CC','#9ACD32','#A0522D'
+,'#A52A2A','#A9A9A9','#A9A9A9','#ADD8E6','#ADFF2F','#AFEEEE','#B0C4DE','#B0E0E6','#B22222','#B8860B','#BA55D3'
+,'#BC8F8F','#BDB76B','#C0C0C0','#C71585','#CD5C5C','#CD853F','#D2691E','#D2B48C','#D3D3D3','#D3D3D3','#D8BFD8'
+,'#DA70D6','#DAA520','#DB7093','#DC143C','#DCDCDC','#DDA0DD','#DEB887','#E0FFFF','#E6E6FA','#E9967A','#EE82EE'
+,'#EEE8AA','#F08080','#F0E68C','#F0F8FF','#F0FFF0','#F0FFFF','#F4A460','#F5DEB3','#F5F5DC','#F5F5F5','#F5FFFA'
+,'#F8F8FF','#FA8072','#FAEBD7','#FAF0E6','#FAFAD2','#FDF5E6','#FF0000','#FF00FF','#FF00FF','#FF1493','#FF4500'
+,'#FF6347','#FF69B4','#FF7F50','#FF8C00','#FFA07A','#FFA500','#FFB6C1','#FFC0CB','#FFD700','#FFDAB9','#FFDEAD'
+,'#FFE4B5','#FFE4C4','#FFE4E1','#FFEBCD','#FFEFD5','#FFF0F5','#FFF5EE','#FFF8DC','#FFFACD','#FFFAF0','#FFFAFA'
+,'#FFFF00','#FFFFE0','#FFFFF0','#FFFFFF'];
+
+
+
+var myarray=[
+2012,2017,2063,2109,4587,5121,5122,5123,5124,5125,5126,5127,5128,5129,5130,5131,5132
+,5133,5134,5135,5150,5147,5146,5145,5144,5143,5142,5141,5140,5139,5138,5137,5136,5166
+,5165,5164,5163,5183,5182,5181,5180,5179,5178,5177,5176,5175,5174,5173,5172,5171,5170
+,5169,5168,5192,5191,5190,5189,5188,5187,5186,5185,5184,6364,6365,6326,6325,6324,6323
+,6322,6321,6320,8420,8743,8744,8810,8811,8920,8921,9035,9049,9067,9058,9042,9155,9156
+,9157,9193,9194,9195,9196,9197,9198,9650,9651,9652,9653,9654,9655,9656,9657,9658,9659
+,9660,9661,9662,9663,9669,9668,9667,9666,9665,9664,9698,9699,9700,9701,9720,9721,9722
+,9947,10193,10177,10633,10634,10641,10642,10728,10729,10833,10834,10835,10836,10837,10838
+,10842,10843,10846,10847,10853,10852,10851,10850,10848,10849,10873,10874,10878,10879,10884
+,10883,10882,10881,10880,10913,10914,10999,11000
+];
+
+document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+//container div
+
+var containerCount=3;
+var containerId=[];
+
+for (containerCounter=1;containerCounter<=containerCount;containerCounter++){
+	containerName='container' + containerCounter;
+	containerId[containerCounter] = document.createElement("div");
+	document.body.appendChild(containerId[containerCounter]);
+	containerId[containerCounter].id=containerName+'-div0';
+	//containerId[containerCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+	//style
+	containerId[containerCounter].style.position='absolute';
+	containerId[containerCounter].style.cssFloat='none';
+	containerId[containerCounter].style.opacity=1;
+	containerId[containerCounter].style.width='99%';
+	containerId[containerCounter].style.height='33%';
+	containerId[containerCounter].style.left='.5%';
+	containerId[containerCounter].style.top=(33*containerCounter)-32.5+'%';
+	containerId[containerCounter].style.textAlign='center';
+	containerId[containerCounter].style.verticalAlign='middle';
+	containerId[containerCounter].style.borderRadius='20px';
+
+
+var divId=[];
+
+
+for (divCounter=1;divCounter<=7;divCounter++){
+//for (divCounter=4;divCounter>=1;divCounter--){
+ elementName=containerName + '-div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+ //alert(divId[divCounter].id);
+containerId[containerCounter].appendChild(divId[divCounter]);
+divId[divCounter].id=elementName;
+divId[divCounter].setAttribute("style", "-webkit-filter:blur(20px)");
+divId[divCounter].style.position='absolute';
+divId[divCounter].style.cssFloat='none';
+divId[divCounter].style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+divId[divCounter].style.opacity=.5;
+
+//divId[divCounter].webkit.transform=90;
+divId[divCounter].style.top=22+'%';
+divId[divCounter].style.left=divCounter*14-13.5 + '%';
+
+divId[divCounter].style.width=170+'px';
+divId[divCounter].style.height=170+'px';
+divId[divCounter].style.borderRadius=90+'px';
+divId[divCounter].style.borderWidth=10+'px';
+divId[divCounter].style.borderColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+divId[divCounter].style.borderStyle='dotted';
+
+
+}
+}
+
+
+
+
+
+///////////////////Container and Basenode Background
+			window.setInterval(function(){
+
+				rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+				rndDivChild=Math.round(Math.random()*6+1);
+
+				containerElementName='container' + rndDivContainer+'-div0';
+				baseElementName='container' + rndDivContainer+'-div7';
+
+				 container=document.getElementById(containerElementName);
+			     baseNode=document.getElementById(baseElementName);
+
+				  try {
+				  	  container.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				  	  baseNode.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				   } catch ( e ) {
+				      alert("Error: " + e.description + 'containerValue: ' + container + 'baseNodeValue:' + baseNode );
+		  			 }
+		},Math.random()*fontChangeRate+1000);
+
+
+
+//////////////////////Node HTML
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*6+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + node );
+				  			 }
+		},Math.random()*fontChangeRate+10000);
+
+//////////////////////Node Color
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*6+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + node );
+				  			 }
+		},Math.random()*fontChangeRate);
+
+
+
+//////////////////////Node Background Color
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*6+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + node );
+				  			 }
+		},Math.random()*fontChangeRate+10000);
+
+
+//////////////////////Node Border Color
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*6+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.style.borderColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+						       //alert ('Value: ' + elementName);
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + elementName );
+				  			 }
+		},Math.random()*fontChangeRate+10000);
+
+
+//////////////////////Node Border Width
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*6+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.style.borderWidth= Math.random()*10+2+'px';
+						       //alert ('Value: ' + elementName);
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + elementName );
+				  			 }
+		},Math.random()*fontChangeRate+10000);
+
+//////////////////////Body Background
+		window.setInterval(function(){
+		 		  try {
+		 		  	  document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		 		   } catch ( e ) {
+		 		      alert("Error: " + e.description + 'Value: ' + 'body' );
+		   			 }
+		},Math.random()*fontChangeRate+20000);
+
+
+
+
+</script>
+</body></html>

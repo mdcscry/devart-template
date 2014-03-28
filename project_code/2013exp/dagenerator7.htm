@@ -1,0 +1,127 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=degenerator1.htm">
+<TITLE>7.DaGenerator-cuneiform 2 glyphs 2 colors sprial</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+
+DIV   {
+	      -webkit-transition-property: all;
+	      -webkit-transition-duration: 10s;
+
+    position:absolute;
+    padding:0%;
+    margin:0%;
+    background:#000000;
+    font-size: 9px;
+    color:  #000000;
+
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;
+font-family:Akkadian,Code2000,Quivira,'Akshar Unicode',Quivira,'Akshar Unicode',Symbola,Aegyptus,'Arial Unicode MS',Code2002,Code2001;
+font-weight:900;
+margin:0px;">
+
+<DIV id="container" style="height:100%;width:100%;"></DIV>
+
+<script type="text/javascript">
+
+var fontChangeRate=1000;
+var constant=.04;
+var numDiv=5000;
+
+var mycolors=[
+'#F8F8FF','#FA8072'//,'#000000','#000000','#000000'
+ ];
+
+var myarray=[
+73728
+
+//cuneiform2
+,74752
+];
+
+//container div
+var container=document.getElementById("container");
+
+var divId=[];
+
+
+for (divCounter=1;divCounter<=numDiv;divCounter++){
+ elementName='div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+ divId[divCounter].id=elementName;
+ //alert(divId[divCounter].id);
+container.appendChild(divId[divCounter]);
+divId[divCounter].style.position='relative';
+divId[divCounter].style.cssFloat='left';
+divId[divCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+}
+
+
+
+	window.setInterval(function(){
+
+	for (intervLoop=1;intervLoop<=numDiv;intervLoop++){
+	divId
+	divId[intervLoop].style.position='relative';
+	divId[intervLoop].style.cssFloat='left';
+}
+
+	},20000);
+
+
+
+	window.setInterval(function(){
+
+	for (intervLoop=1;intervLoop<=2000;intervLoop++){
+		rndDiv=Math.round(Math.random()*(numDiv-1)+1);
+		//alert(rndDiv);
+
+		  try {
+		      divId[rndDiv].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		   } catch ( e ) {
+		      alert("Error: " + e.description + 'Value: ' + rndDiv );
+   }
+
+		}
+		},Math.random()*fontChangeRate+1000);
+
+
+var angle=1080;
+var angle_value=(Math.random()*(angle/10000))+1 ;
+//alert(angle_value);
+
+
+
+var timeoutCounter=1;
+	window.setInterval(function(){
+for (intoTheSpiral=1;intoTheSpiral <= numDiv;intoTheSpiral++)	{
+
+
+	var angle_value=Math.floor(Math.random()*angle)+1 ;
+
+    var x = 50 + ((constant * angle_value) * Math.cos(angle_value)); //archimedes
+    var y = 50 + ((constant * angle_value) * Math.sin(angle_value)); //archimedes
+	divId[intoTheSpiral].style.position='absolute';
+    divId[intoTheSpiral].style.left=x+'%';
+    divId[intoTheSpiral].style.top=y+'%';
+	timeoutCounter++;
+
+
+  }
+  },20000);
+
+
+
+</script>
+</body></html>

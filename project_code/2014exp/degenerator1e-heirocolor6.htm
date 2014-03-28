@@ -1,0 +1,203 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=degenerator2.htm">
+<TITLE>1.DeGenerator-heiro Platform</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+BODY   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 30s,3s;
+}
+DIV   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 30s,5s;
+
+
+
+    font-size: 440px;
+    left: 8%;top:0%;
+
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;font-family:aegyptus,musica,symbola,aroania,alexander;asea">
+
+
+
+<script type="text/javascript">
+
+document.body.style.backgroundColor= 'hsla('
++ (Math.round(Math.random()*360)) + ','
++ (Math.round(Math.random()*200))+ '%,'
++ (Math.round(Math.random()*100)) + '%,'
++ (Math.random(1)+.1)
++ ')';
+
+
+
+
+var fontChangeRate=5000;
+
+var mycolors=[];
+var colNum=20;
+
+setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*100+20),1);
+//setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*100),1);
+//setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*100),1);
+//setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*70),1);
+
+function setColor(hue,sat,light,opa){
+
+for (colorCounter=1;colorCounter<=colNum;colorCounter++){
+var toSpliceColor='hsla('
++  Math.round(hue+Math.random()*40-20) + ','
++  Math.round(40*Math.random()+5+sat-20)+ '%,'
++ Math.round(Math.random()*10+light) + '%,'
++ (Math.random(opa)+.1	)
++ ')';
+//alert (toSpliceColor);
+
+	mycolors.push(toSpliceColor);
+	}
+}
+
+var mycolors2=[];
+var colNum=100
+
+setColor2(Math.round(Math.random()*360),Math.round(Math.random()*1800),Math.round(Math.random()*100),1);
+//setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*100),1);
+//setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*100),1);
+//setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*70),1);
+
+function setColor2(hue,sat,light,opa){
+
+for (colorCounter=1;colorCounter<=colNum;colorCounter++){
+var toSpliceColor='hsla('
++  Math.round(hue+Math.random()*40-20) + ','
++  Math.round(40*Math.random()+5+sat-20)+ '%,'
++ Math.round(Math.random()*10+light) + '%,'
++ (Math.random(opa)+.1	)
++ ')';
+alert (toSpliceColor);
+
+	mycolors2.push(toSpliceColor);
+	}
+}
+
+
+
+
+var myarray=[
+//heiro platform
+997604,997762,997763,997767,997870,997863,997858,997857,997874,997876,997880,997951,997989,998287,998334,998539,998535,998534
+,998571,998733,998729,999682,999731,999732,999733,999729,999734,999738,999740,999741,999742,999727,999726,1000052,1000053
+,1001849,1002182,1002181,1002339,1002340,1002341,1002342,1002343,1002344,1002345,1002346,1002347,1002348,1002349
+,1002350,1002351,1002352,1002353,1002354,1002355,1002356,1002357,1002358,1002359,1002360,1002361,1002362,1002363,1002364,1002365
+,1002366,1002367,1002368,1002369,1002370,1002372,1002371,1002373,1002374,1002375,1002376,1002377,1002378,1002379,1002380,1002381
+,1002382,1002383,1002384,1002385,1002386
+
+,78368,78369,78370,78371,78372,78373,78374,78375,78376,78377,78378,78379,78380,78381,78382,78383,78384,78385,78386,78387,78388
+,78389,78390,78391,78392,78393,78394,78395,78396,78397,78398,78399,78400,78401,78402,78403,78404,78405,78406,78407,78408,78409
+,78410,78411,78412,78413,78414,78415
+
+ ,1001405,1001406,1001390,1001391,1001392,1001345,1001346,1001348,1001349,1001309,1001310,1001311,1001129,1000692
+ ,1000053,1000052,999728,999729,999730,999731,999732,999733,999734,999738,999740,999741,999742,999739,999727,999726,999679,999677,999682
+
+];
+
+
+//container div
+
+var containerCount=6;
+var containerId=[];
+
+for (containerCounter=1;containerCounter<=containerCount;containerCounter++){
+	containerName='container' + containerCounter;
+	containerId[containerCounter] = document.createElement("div");
+	document.body.appendChild(containerId[containerCounter]);
+	containerId[containerCounter].id=containerName+'-div0';
+	containerId[containerCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+	//style
+
+	containerId[containerCounter].style.position='relative';
+	containerId[containerCounter].style.cssFloat='left';
+	containerId[containerCounter].style.backgroundColor= mycolors2[Math.round((mycolors.length-1)*Math.random())];
+	containerId[containerCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+		containerId[containerCounter].style.borderRightWidth='2px';
+		containerId[containerCounter].style.borderLeftWidth='2px';
+		containerId[containerCounter].style.borderRightStyle='double';
+		containerId[containerCounter].style.borderLeftStyle='dotted';
+		containerId[containerCounter].style.borderLeftColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		containerId[containerCounter].style.borderRightColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+		containerId[containerCounter].style.borderTopWidth='2px';
+		containerId[containerCounter].style.borderBottomWidth='2px';
+		containerId[containerCounter].style.borderTopStyle='double';
+		containerId[containerCounter].style.borderBottomStyle='dotted';
+		containerId[containerCounter].style.borderTopColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		containerId[containerCounter].style.borderBottomColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+
+				containerId[containerCounter].style.borderRadius='6px';
+
+
+var divId=[];
+
+
+for (divCounter=1;divCounter<1;divCounter++){
+ elementName=containerName + '-div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+ //alert(divId[divCounter].id);
+containerId[containerCounter].appendChild(divId[divCounter]);
+divId[divCounter].id=elementName;
+divId[divCounter].style.border='10px solid red';
+divId[divCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+
+
+}
+}
+
+	window.setInterval(function(){
+
+		rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+		//rndDivContainer=1;
+		rndDivChild=Math.round(Math.random()*0);
+		elementName='container' + rndDivContainer + '-div'+ rndDivChild;
+		 node=document.getElementById(elementName);
+		  try {
+		      node.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		       node.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+		   } catch ( e ) {
+		      alert("Error: " + e.description + 'Value: ' + elementName );
+  			 }
+
+
+		},Math.random()*fontChangeRate);
+
+//////////////////////Body Background
+		window.setInterval(function(){
+		 		  try {
+		 		  	  document.body.style.backgroundColor= 'hsla('
++ (Math.round(Math.random()*360)) + ','
++ (Math.round(Math.random()*200))+ '%,'
++ (Math.round(Math.random()*100)) + '%,'
++ (Math.random(1)+.1)
++ ')';
+		 		   } catch ( e ) {
+		 		      alert("Error: " + e.description + 'Value body background: ' + elementName );
+		   			 }
+		},Math.random()*fontChangeRate+30000);
+
+
+</script>
+</body></html>

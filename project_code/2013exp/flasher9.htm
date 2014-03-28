@@ -1,0 +1,92 @@
+
+
+
+
+<html>
+<head>
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta http-equiv="refresh" content="300;url=flasher10.htm">
+</head>
+
+
+
+<div id="myid2" style="position:absolute;left:50%;top:0%;bottom:50%; width:50%;background-color:#FFFFFF;font-size: 275px;color:  #000000; text-align:center;vertical-align: middle; ">123</div>
+
+
+<script type="text/javascript">
+var element = document.getElementById("Slideshow");
+var duration = 3000; /* fade duration in millisecond */
+var hidtime = 2000; /* time to stay hidden */
+var showtime = 2000; /* time to stay visible */
+
+function setOpa(elem,Opa) {
+  elem.style.opacity = Opa;
+  elem.style.MozOpacity = Opa;
+  elem.style.KhtmlOpacity = Opa;
+  elem.style.filter = 'alpha(opacity=' + (Opa * 100) + ');'
+  ;
+}
+
+function fadeOut(elem_out) {
+  for (i = 0; i <= 1; i += 0.01) {
+    setTimeout("setOpa(" + elem_out + "," + (1 - i) +")", i * duration);
+  }
+   setTimeout("fadeIn(" + elem_out + ")"  , (duration + hidtime));
+}
+function fadeIn(elem_in) {
+  for (i = 0; i <= 1; i += 0.01) {
+    setTimeout("setOpa(" + elem_in + "," + i +")", i * duration);
+  }
+   setTimeout("fadeOut(" + elem_in + ")," ,(duration + showtime));
+}
+
+
+var mycolors=['FF7400','BF7130','A64B00','FF9640','FFB273','FFAA00','BF8F30','A66F00','FFBF40','FFD073','FF0000','BF3030','A60000','FF4040','FF7373','009999'
+,'1D7373','006363','33CCCC','5CCCCC' ];
+
+var myarray=[32
+//line type symbols
+,9673,9675,9676,9677,9678,9679,9680,9681,9682,9683,9684,9685,9686,9687,9688,9689,9690,9691,9692,9693,9694,9695,9696,9697,9711,8960,8977,8986,9004,9022,9021,9033,9055,9061,9077,8709,2218,2219,8734
+,8853,8854,8855,8856,8857,8858,8859,8860,8861,9991,8853,8854,8855,8856,8857,8858,8859,8860,8861,1006
+];
+
+var textChangeRate1=10000;
+var bgColChangeRate=100000;
+var fontChangeRate=60000;
+var fontSizeChangeRate=300000;
+
+var elem6=document.getElementById('myid2');
+
+//window.setInterval(function(){fadeOut(elem6);
+//   elem6.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+//   },Math.random()*textChangeRate1);
+
+window.setInterval(function(){fadeOut(elem6);},Math.random()*textChangeRate1);
+
+//window.setInterval(function(){
+ //   elem6.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*bgColChangeRate);
+
+//window.setInterval(function(){
+  //  elem6.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate);
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

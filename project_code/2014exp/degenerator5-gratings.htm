@@ -1,0 +1,218 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=f3.htm">
+<TITLE>5.DeGenerator-gratings</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+BODY { -webkit-transition-property: background-color;
+	      -webkit-transition-duration: 10s;
+	 }
+DIV   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 10s,7s;
+
+    padding:0%;
+    margin:0%;
+    background:#330066;
+    font-size: 325px;
+    color:  #330033;
+    left: 1.5%;
+    top:-4%;
+    overflow:hidden;
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;font-family:symbola;">
+
+
+
+<script type="text/javascript">
+
+var fontChangeRate=4000;
+
+var mycolors=[
+'#330066',
+'#333366',
+'#330033',
+'#330066',
+'#333366',
+'#330033',
+'#660066',
+'#330066',
+'#333366',
+'white',
+'#330099'
+];
+
+//'transparent',
+//'transparent',
+
+var myarray=[
+//gratings
+//128310,128311,128312,128313
+//,128316,128317
+//9617
+//,9618
+//,9619
+//,9641
+//,9926
+//,128314,128315
+//,
+//9671,9670,9672,10625
+//,
+127745,127745,127745
+];
+
+document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+//container div
+
+var containerCount=12;
+var containerId=[];
+
+for (containerCounter=1;containerCounter<=containerCount;containerCounter++){
+	containerName='container' + containerCounter;
+	containerId[containerCounter] = document.createElement("div");
+	document.body.appendChild(containerId[containerCounter]);
+	containerId[containerCounter].id=containerName+'-div0';
+	containerId[containerCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+	//style
+	containerId[containerCounter].style.position='relative';
+	containerId[containerCounter].style.cssFloat='left';
+	containerId[containerCounter].style.opacity=1;
+	containerId[containerCounter].style.width='385px';
+	containerId[containerCounter].style.textAlign='center';
+	containerId[containerCounter].style.verticalAlign='middle';
+	//containerId[containerCounter].style.webkitTransform = 'rotate(' + Math.round(Math.random()*2)*180 + 'deg)';
+			         containerId[containerCounter].style.webkitTransform= 'skew('+ Math.round(Math.random()*180) +'deg,'+ Math.round(Math.random()*180) +'deg)';
+	containerId[containerCounter].style.overflow='hidden';
+var divId=[];
+
+
+for (divCounter=1;divCounter<=4;divCounter++){
+ elementName=containerName + '-div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+ //alert(divId[divCounter].id);
+containerId[containerCounter].appendChild(divId[divCounter]);
+divId[divCounter].id=elementName;
+divId[divCounter].style.position='absolute';
+divId[divCounter].style.cssFloat='none';
+divId[divCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+divId[divCounter].style.opacity=.65;
+divId[divCounter].style.webkitTransform = 'rotate(' + Math.round(Math.random()*2)*180 + 'deg)';
+//divId[divCounter].webkit.transform=90;
+divId[divCounter].style.top=0;
+//divId[divCounter].style.left=0;
+divId[divCounter].style.width='335px';
+divId[divCounter].style.background='transparent';
+divId[divCounter].style.overflow='hidden';
+divId[divCounter].style.textShadow=Math.round( Math.random()*10-5 ) + 'px '
+								+Math.round( Math.random()*10-5 ) + 'px '
+								+ ' white';
+divId[divCounter].style.webkitTextFillColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+  divId[divCounter].style.webkitTextStrokeWidth=Math.round(Math.random()*10) +"px";
+  divId[divCounter].style.webkitTextStrokeColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+}
+}
+
+
+
+
+
+///////////////////Container and Basenode Backgroud
+			window.setInterval(function(){
+
+				rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+				rndDivChild=Math.round(Math.random()*3+1);
+
+				containerElementName='container' + rndDivContainer+'-div0';
+				baseElementName='container' + rndDivContainer+'-div4';
+
+				 container=document.getElementById(containerElementName);
+			     baseNode=document.getElementById(baseElementName);
+
+				  try {
+				  	  container.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				  	  baseNode.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				   } catch ( e ) {
+				      alert("Error: " + e.description + 'Value: ' + baseNode );
+		  			 }
+		},Math.random()*fontChangeRate);
+
+
+
+//////////////////////Node HTML
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*3+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + elementName );
+				  			 }
+		},Math.random()*fontChangeRate+10000);
+
+//////////////////////Node Color
+		window.setInterval(function(){
+						rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+						rndDivChild=Math.round(Math.random()*3+1);
+						 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+						 node=document.getElementById(elementName);
+						  try {
+						       node.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+						   } catch ( e ) {
+						      alert("Error: " + e.description + 'Value: ' + elementName );
+				  			 }
+		},Math.random()*fontChangeRate);
+
+
+		//////////////////////skew and rotation
+						window.setInterval(function(){
+												rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+												rndDivChild=Math.round(Math.random()*3+1);
+												 elementName='container' + rndDivContainer+ '-div'+ rndDivChild;
+								 node=document.getElementById(elementName);
+						 		  try {
+				  node.style.webkitTransform = 'rotateX(' + Math.round(Math.random()*2)*180 + 'deg)';
+		         //node.style.webkitTransform= 'skew('+ Math.round(Math.random()*180) +'deg,'+ Math.round(Math.random()*180) +'deg)';
+		         node.style.textShadow=Math.round( Math.random()*10-5 ) + 'px '
+				 								+Math.round( Math.random()*10-5 ) + 'px '
+				 								+ ' white';
+				 node.style.webkitTextFillColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+				   node.style.webkitTextStrokeWidth=Math.round(Math.random()*3) +"px";
+  					node.style.webkitTextStrokeColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+
+				//   node.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+				//   node.style.width= Math.round(Math.random()*50) + '%';
+				//   node.style.left=Math.round(Math.random()*50) +'%';
+										   } catch ( e ) {
+										      alert("Error: " + e.description + 'Value skew rotation: ' + node );
+						  			 }
+			},fontChangeRate+4000);
+
+//////////////////////Body Background
+		window.setInterval(function(){
+		 		  try {
+		 		  	  document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		 		   } catch ( e ) {
+		 		      alert("Error: " + e.description + 'Value: ' + elementName );
+		   			 }
+		},Math.random()*fontChangeRate+20000);
+
+
+
+
+</script>
+</body></html>

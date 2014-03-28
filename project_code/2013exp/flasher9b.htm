@@ -1,0 +1,260 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="refresh" content="300;url=flasher13.htm">
+
+</head>
+
+
+<STYLE type="text/css">
+
+
+@-webkit-keyframes still
+{
+  0% {
+    -webkit-filter:   opacity(1) ;
+
+  }
+  100% {
+    -webkit-filter:   opacity(1)  ;
+
+  }
+
+}
+
+@-webkit-keyframes fadeOut
+{
+  0% {
+    -webkit-filter:   blur(100px) opacity(1) ;
+
+  }
+  100% {
+    -webkit-filter:   blur(0px) opacity(0)  ;
+  }
+
+}
+
+@-webkit-keyframes fadeIn
+{
+  0% {
+    -webkit-filter:    blur(100px) opacity(0) ;
+
+  }
+
+  100% {
+    -webkit-filter:  blur(100px) opacity(1)  ;
+
+  }
+
+}
+
+@-webkit-keyframes reverseBlur
+{
+  0% {
+    -webkit-filter:   blur(50px);
+
+  }
+  100% {
+    -webkit-filter:   blur(0px) ;
+
+  }
+}
+
+
+@-webkit-keyframes blur
+{
+  0% {
+    -webkit-filter:   blur(100px);
+
+  }
+  100% {
+    -webkit-filter:   blur(200px) ;
+
+  }
+}
+
+DIV   {
+    position:absolute;
+    padding-top:0%;
+    left:0%;top:0%;
+    width:100%;height:100%;
+    background:#00857C;
+    font-size: 700px;
+    color:  #FFFFFF;
+    text-align:center;
+    vertical-align: middle;
+
+}
+
+#myid2_bck {
+	    position:absolute;
+	    padding-top:0%;
+	    left:0%;top:0%;
+	    width:100%;height:100%;
+	    background:#00857C;
+	    font-size: 700px;
+	    color:  #FFFFFF;
+	    text-align:center;
+	    vertical-align: middle;
+      opacity: 1;
+
+}
+
+#myid2 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 10s,20s;
+       -webkit-filter:    blur(100px)
+}
+
+#myid2.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 10s,20s;
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 20s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+}
+
+#myid2.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 10s,20s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+}
+#myid2.blur {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 10s,20s;
+
+		-webkit-animation-name: blur;
+		-webkit-animation-duration: 15s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-play-state: running;
+}
+
+
+#myid2.reverseBlur {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 10s,20s;
+
+		-webkit-animation-name: blur;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+}
+
+</STYLE>
+
+
+
+<body style="overflow: hidden;font-family:Quivira,Code2000,Sun-ExtA,'Akshar Unicode',Symbola,'Arial MS Unicode';">
+<div id="myid2_bck"></div>
+<div id="myid2" >123</div>
+
+<script type="text/javascript">
+var elem2 = document.getElementById("myid2");
+var elem2_bg = document.getElementById("myid2_bck");
+
+var textChangeRate1=10000;
+var bgColChangeRate=100000;
+var fontChangeRate=50000;
+var animationPlayState=30000;
+
+
+
+
+
+
+function changeColor(){
+	var elem2_bg_color_chg=Math.random()*bgColChangeRate;
+	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+	window.setInterval(function(){
+	   elem2.style.backgroundColor= elem2_bg_color;
+	   elem2_bg.style.backgroundColor= elem2_bg_color;
+	   },elem2_bg_color_chg);
+
+	window.setInterval(function(){
+		elem2.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate);
+}
+
+var mycolors=['#FF7400','#BF710','#A64B00','#FF9640','#FFB273','#FFAA00','#BF8F30','#A66F00','#FFBF40','#FFD073','FF0000','BF3030','A60000','FF4040','FF7373','009999'
+,'#1D7373','#006363','#33CCCC','#5CCCCC' ];
+
+var myarray=[32
+//line type symbols
+,9673,9675,9676,9677,9678,9679,9680,9681,9682,9683,9684,9685,9686,9687,9688,9689,9690,9691,9692,9693,9694,9695,9696,9697,9711,8960,8977,8986,9004,9022,9021,9033,9055,9061,9077,8709,8734
+,8853,8854,8855,8856,8857,8858,8859,8860,8861,9991,8853,8854,8855,8856,8857,8858,8859,8860,8861,1006
+];
+
+
+//myAnimationArray=["paused","noDisplay","blur"];
+
+var originalViewState="display";
+//var changeViewState = "noDisplay";
+
+var changeViewState = "blur";
+
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';' +
+		'&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';<BR>' +
+		'&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';'
+	;
+
+
+	;
+	elem2.className = originalViewState;
+
+
+window.setInterval(function (){
+if (
+	elem2.className==originalViewState) {elem2.className =changeViewState;}
+
+else {
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';'+
+	'&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';' +
+	'&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';'
+	;
+	elem2.className =originalViewState;
+}
+},animationPlayState);
+
+changeColor();
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

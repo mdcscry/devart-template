@@ -1,0 +1,750 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=flasher39-maya-out.htm">
+<title>MPH Scattered Fader</title>
+
+
+</head>
+
+
+<STYLE type="text/css">
+
+
+@-webkit-keyframes still
+{
+  0% {
+    -webkit-filter:   opacity(.9) ;
+
+  }
+  100% {
+    -webkit-filter:   opacity(.9)  ;
+
+  }
+
+}
+
+@-webkit-keyframes fadeOut
+{
+  0% {
+    -webkit-filter:    opacity(.9) ;
+  }
+  100% {
+    -webkit-filter:    opacity(0)  ;
+  }
+
+}
+
+@-webkit-keyframes fadeIn
+{
+  0% {
+    -webkit-filter:     opacity(0) ;
+
+  }
+  100% {
+    -webkit-filter:  opacity(.9)  ;
+
+  }
+
+}
+
+@-webkit-keyframes reverseBlur
+{
+  0% {
+    -webkit-filter:   blur(50px);
+
+  }
+  100% {
+    -webkit-filter:   blur(0px) ;
+
+  }
+}
+
+
+@-webkit-keyframes blur
+{
+  0% {
+    -webkit-filter:   blur(0px) ;
+  }
+  100% {
+    -webkit-filter:   blur(100px)  ;
+  }
+}
+
+DIV   {
+
+    position:absolute;
+    padding:0%;
+    margin:0%;
+    top:-275%;left:-39%;
+	width:100%;height:100%;
+    background:#FFFFFF;
+    font-size: 4400px;
+    color:  blue;
+    text-align:center;
+    vertical-align: middle;
+
+}
+
+#myid2_bck {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+	    position:absolute;
+	    padding-top:0%;
+	    left:0%;top:0%;
+	    width:100%;height:100%;
+	    background:#FFFFFF;
+	    font-size: 700px;
+	    color:  #FFFFFF;
+	    text-align:center;
+	    vertical-align: middle;
+      opacity: 1;
+
+}
+
+#myid8 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+}
+
+#myid8.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid8.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid7 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+}
+
+#myid7.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid7.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid6 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+
+
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+}
+
+#myid6.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid6.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+
+#myid5 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;l
+
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+}
+
+#myid5.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid5.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid4 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+}
+
+#myid4.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid4.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid3 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+		}
+
+#myid3.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid3.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+
+
+
+#myid2 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+		text-align: center;
+		height:1px;
+		width:100%;
+
+
+}
+
+#myid2.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+
+}
+
+#myid2.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+
+
+
+
+#myid1 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+        padding:0px;
+		margin:0px;
+	 	text-align: center;
+	 	height:1px;
+		width:100%;
+}
+
+#myid1.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid1.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 7s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+
+</STYLE>
+
+
+
+<body style="overflow: hidden;font-family:'MPH 2B Damase';
+vertical-align: middle;text-align:center;margin:0;">
+<div id="myid2_bck"></div>
+<div id="myid8" ></div>
+<div id="myid7" ></div>
+<div id="myid6" ></div>
+<div id="myid5" ></div>
+<div id="myid4" ></div>
+<div id="myid3" ></div>
+<div id="myid1" ></div>
+<div id="myid2" ></div>
+
+<script type="text/javascript">
+var elem8 = document.getElementById("myid8");
+var elem7 = document.getElementById("myid7");
+var elem6 = document.getElementById("myid6");
+var elem5 = document.getElementById("myid5");
+var elem4 = document.getElementById("myid4");
+var elem3 = document.getElementById("myid3");
+var elem2 = document.getElementById("myid2");
+var elem1 = document.getElementById("myid1");
+var elem2_bg = document.getElementById("myid2_bck");
+
+
+
+
+var textChangeRate1=10000;
+var bgColChangeRate=200000;
+var fontChangeRate=30000;
+var fontSizeFactorMultiple=2;
+var fontSizeFactorAddOn=800;
+var animationPlayState=7000;
+
+
+function changeColor(){
+	var elem2_bg_color_chg=Math.random()*bgColChangeRate+40000;
+	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+	window.setInterval(function(){
+	   	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+	   elem8.style.backgroundColor= elem2_bg_color;
+	   elem7.style.backgroundColor= elem2_bg_color;
+	   elem6.style.backgroundColor= elem2_bg_color;
+	   elem5.style.backgroundColor= elem2_bg_color;
+	   elem4.style.backgroundColor= elem2_bg_color;
+	   elem3.style.backgroundColor= elem2_bg_color;
+	   elem2.style.backgroundColor= elem2_bg_color;
+	   elem1.style.backgroundColor= elem2_bg_color;
+	   elem2_bg.style.backgroundColor= elem2_bg_color;
+	   },elem2_bg_color_chg);
+
+	window.setInterval(function(){
+		elem1.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem2.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem3.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem4.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem5.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem6.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem7.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+	window.setInterval(function(){
+		elem8.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+
+
+}
+
+var mycolors=['#000000','#000080','#00008B','#0000CD','#0000FF','#006400','#008000','#008080','#008B8B','#00BFFF','#00CED1'
+,'#00FA9A','#00FF00','#00FF7F','#00FFFF','#00FFFF','#191970','#1E90FF','#20B2AA','#228B22','#2E8B57','#2F4F4F'
+,'#2F4F4F','#32CD32','#3CB371','#40E0D0','#4169E1','#4682B4','#483D8B','#48D1CC','#4B0082','#556B2F','#5F9EA0'
+,'#6495ED','#66CDAA','#696969','#696969','#6A5ACD','#6B8E23','#708090','#708090','#778899','#778899','#7B68EE'
+,'#7CFC00','#7FFF00','#7FFFD4','#800000','#800080','#808000','#808080','#808080','#87CEEB','#87CEFA','#8A2BE2'
+,'#8B0000','#8B008B','#8B4513','#8FBC8F','#90EE90','#9370DB','#9400D3','#98FB98','#9932CC','#9ACD32','#A0522D'
+,'#A52A2A','#A9A9A9','#A9A9A9','#ADD8E6','#ADFF2F','#AFEEEE','#B0C4DE','#B0E0E6','#B22222','#B8860B','#BA55D3'
+,'#BC8F8F','#BDB76B','#C0C0C0','#C71585','#CD5C5C','#CD853F','#D2691E','#D2B48C','#D3D3D3','#D3D3D3','#D8BFD8'
+,'#DA70D6','#DAA520','#DB7093','#DC143C','#DCDCDC','#DDA0DD','#DEB887','#E0FFFF','#E6E6FA','#E9967A','#EE82EE'
+,'#EEE8AA','#F08080','#F0E68C','#F0F8FF','#F0FFF0','#F0FFFF','#F4A460','#F5DEB3','#F5F5DC','#F5F5F5','#F5FFFA'
+,'#F8F8FF','#FA8072','#FAEBD7','#FAF0E6','#FAFAD2','#FDF5E6','#FF0000','#FF00FF','#FF00FF','#FF1493','#FF4500'
+,'#FF6347','#FF69B4','#FF7F50','#FF8C00','#FFA07A','#FFA500','#FFB6C1','#FFC0CB','#FFD700','#FFDAB9','#FFDEAD'
+,'#FFE4B5','#FFE4C4','#FFE4E1','#FFEBCD','#FFEFD5','#FFF0F5','#FFF5EE','#FFF8DC','#FFFACD','#FFFAF0','#FFFAFA'
+,'#FFFF00','#FFFFE0','#FFFFF0','#FFFFFF'];
+
+
+
+var myarray=[32
+//old persian
+,66560,66561,66562,66563,66564,66565,66566,66567,66568,66569,66570,66571,66572,66573,66574,66575,66576,66577,66578,66579,66580,66581,66582,66583,66584
+,66585,66586,66587,66588,66589,66590,66591,66592,66593,66594,66595,66596,66597,66600,66601,66602,66603,66604,66605,66606,66607,66608,66609,66610,66611
+,66612,66613,66614,66615,66616,66617,66618,66619,66620,66621,66622,66623,66624,66625,66626,66627,66628,66629,66630,66631,66632,66633,66634,66635,66636,66637
+//shavian
+,66640,66641,66642,66643,66644,66645,66646,66647,66648,66649,66650,66651,66652,66653,66654,66655,66656,66657,66658,66659,66660,66661,66662,66663
+,66664,66665,66666,66667,66668,66669,66670,66671,66672,66673,66674,66675,66676,66677,66678,66679,66680,66681,66682,66683,66684,66685,66686,66687
+//osmanya
+,66688,66689,66690,66691,66692,66693,66694,66695,66696,66697,66698,66699,66700,66701,66702,66703,66704,66705,66706,66707,66708,66709,66710,66711
+,66712,66713,66714,66715,66716,66717,66720,66721,66722,66723,66724,66725,66726,66727,66728,66729
+//cypriot
+,67584,67585,67586,67587,67588,67589,67592,67594,67595,67596,67597,67598,67599,67600,67601,67602,67603,67604,67605,67606,67607,67608,67609,67610,67611,67612,67613,67614,67615,67616,67617,67618,67619,67620,67621,67622,67623,67624,67625,67626,67627,67628,67629
+,67630,67631,67632,67633,67634,67635,67636,67637,67639,67640,67644,67647
+//Phoenician
+,67840,67841,67842,67843,67844,67845,67846,67847,67848,67849,67850,67851,67852,67853,67854,67855,67856,67857,67858,67859,67860,67861,67862,67863,67864,67865,67871
+//armenian
+,1329,1330,1331,1332,1333,1334,1335,1336,1337,1338,1339,1340,1341,1342,1343,1344,1345,1346,1347,1348,1349,1350,1351,1352,1353,1354,1355,1356,1357
+,1358,1359,1360,1361,1362,1363,1364,1365,1366,1377,1378,1379,1380,1381,1382,1383,1384,1385,1386,1387,1388,1389,1390,1391,1392,1393,1394,1395,1396,1397
+,1398,1399,1400,1401,1402,1403,1404,1405,1406,1407,1408,1409,1410,1411,1412,1413,1414,1415,1417,1369,1370,1371,1372,1373,1374,1375
+//hebrew
+,1488,1489,1490,1491,1492,1493,1494,1495,1496,1497,1498,1499,1500,1501,1502,1503,1504,1505,1506
+,1507,1508,1509,1510,1511,1512,1513,1514,1520,1521,1522,1523,1524
+//Georgian
+,4256,4257,4258,4259,4260,4261,4262,4263,4264,4265,4266,4267,4268,4269,4270,4271,4272,4273,4274,4275,4276,4277,4278,4279,4280,4281,4282
+,4283,4284,4285,4286,4287,4288,4289,4290,4291,4292,4293
+,11520,11521,11522,11523,11524,11525,11526,11527,11528,11529,11530,11531,11532,11533,11534,11535,11536,11537,11538,11539,11540,11541
+,11542,11543,11544,11545,11546,11547,11548,11549,11550,11551,11552,11553,11554,11555,11556,11557
+//limbu
+,6400,6401,6402,6403,6404,6405,6406,6407,6408,6409,6410,6411,6412,6413,6414,6415,6416,6417,6418,6419,6420,6421,6422,6423,6424,6425,6426,6427
+,6428,6432,6433,6434,6435,6436,6437,6438,6439,6440,6441,6442,6443,6448,6449,6450,6451,6452,6453,6454,6455,6456,6457,6458,6459,6464,6468,6469
+,6470,6471,6472,6473,6474,6475,6476,6477,6478,6479
+//buganese
+,6656,6657,6658,6659,6660,6661,6662,6663,6664,6665,6666,6667,6668,6669,6670,6671,6672,6673,6674
+,6675,6676,6677,6678,6679,6680,6681,6682,6683,6684,6685,6686,6687
+//glagolitic
+,11264,11265,11266,11267,11268,11269,11270,11271,11272,11273,11274,11275,11276,11277,11278,11279,11280,11281,11282,11283,11284,11285,11286,11287
+,11288,11289,11290,11291,11292,11293,11294,11295,11296,11297,11298,11299,11300,11301,11302,11303,11304,11305,11306,11307,11308,11309,11310,11312,11313
+,11314,11315,11316,11317,11318,11319,11320,11321,11322,11323,11324,11325,11326,11327,11328,11329,11330,11331,11332,11333,11334,11335,11336,11337,11338
+,11339,11340,11341,11342,11343,11344,11345,11346,11347,11348,11349,11350,11351,11352,11353,11354,11355,11356,11357,11358
+//coptic
+,11392,11393,11394,11395,11396,11397,11398,11399,11400,11401,11402,11403,11404,11405,11406,11407,11408,11409,11410,11411,11412,11413,11414,11415
+,11416,11417,11418,11419,11420,11421,11422,11423,11424,11425,11426,11427,11428,11429,11430,11431,11432,11433,11434,11435,11436,11437,11438,11439,11440,11441
+,11456,11464,11465,11493
+//tifinagh
+,11569,11570,11571,11572,11573,11574,11575,11576,11577,11578,11579,11581,11580,11582,11583,11584,11585,11586,11587
+,11588,11589,11590,11591,11592,11593,11594,11595,11596,11598,11599,11600,11601,11602,11603,11604,11605,11606,11607
+,11608,11609,11610,11611,11612,11613,11614,11615,11616,11617,11618,11619,11620,11621,11568
+//kharoshthi
+,68096,68097,68098,68099,68101,68102,68108,68109,68110,68111,68112,68113,68114,68115,68117,68118,68119,68121,68122,68123,68124,68125,68126,68127,68128
+,68129,68130,68131,68132,68133,68134,68135,68136,68137,68138,68139,68140,68141,68142,68143,68144,68145,68146,68147,68160,68161,68162,68163,68164,68165
+,68166,68167,68176,68177,68178,68179,68180,68181,68184,68182,68183];
+
+
+
+elem1.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem2.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem3.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem4.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem5.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem6.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem7.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+elem8.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+//myAnimationArray=["noDisplay","blur","noDisplay","still"];
+
+var originalViewState="display";
+var changeViewState = "noDisplay";
+
+	elem1.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem3.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem4.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+	elem1.style.textShadow=Math.round( Math.random()*1+1 ) + 'px '
+								+Math.round( Math.random()*1 +1) + 'px '
+								+ mycolors[Math.round((mycolors.length-1)*Math.random())];
+	 elem1.style.webkitTextFillColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+	  elem1.style.webkitTextStrokeWidth=Math.round(Math.random()*5+1) +"px";
+
+	elem2.style.textShadow=Math.round( Math.random()*1+1 ) + 'px '
+								+Math.round( Math.random()*1 +1) + 'px '
+								+ mycolors[Math.round((mycolors.length-1)*Math.random())];
+	 elem2.style.webkitTextFillColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+	  elem2.style.webkitTextStrokeWidth=Math.round(Math.random()*1+1) +"px";
+
+			elem3.style.textShadow=Math.round( Math.random()*1+1 ) + 'px '
+										+Math.round( Math.random()*1 +1) + 'px '
+										+ mycolors[Math.round((mycolors.length-1)*Math.random())];
+			 elem3.style.webkitTextFillColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+			  elem3.style.webkitTextStrokeWidth=Math.round(Math.random()*1+1) +"px";
+
+			elem4.style.textShadow=Math.round( Math.random()*1+1 ) + 'px '
+										+Math.round( Math.random()*1 +1) + 'px '
+										+ mycolors[Math.round((mycolors.length-1)*Math.random())];
+			 elem4.style.webkitTextFillColor=mycolors[Math.round((mycolors.length-1)*Math.random())];
+  elem4.style.webkitTextStrokeWidth=Math.round(Math.random()*1+1) +"px";
+
+	elem1.className = originalViewState;
+	elem2.className = originalViewState;
+	elem3.className = originalViewState;
+	elem4.className = originalViewState;
+
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+
+
+
+window.setInterval(function (){
+if (
+	elem8.className==originalViewState) {elem8.className =changeViewState;}
+
+else {
+
+	var fontSizeInside=Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+
+	elem8.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem8.style.fontSize= fontSizeInside;
+
+	elem8.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState + 20700);
+
+window.setInterval(function (){
+if (
+	elem7.className==originalViewState) {elem7.className =changeViewState;}
+
+else {
+
+	var fontSizeInside=Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+
+	elem7.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem7.style.fontSize= fontSizeInside;
+
+	elem7.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState + 30700);
+
+
+window.setInterval(function (){
+if (
+	elem6.className==originalViewState) {elem6.className =changeViewState;}
+
+else {
+
+	var fontSizeInside=Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+
+	elem6.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem6.style.fontSize= fontSizeInside;
+
+	elem6.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState + 15700);
+
+
+window.setInterval(function (){
+if (
+	elem5.className==originalViewState) {elem5.className =changeViewState;}
+
+else {
+
+	var fontSizeInside=Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+
+	elem5.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem5.style.fontSize= fontSizeInside;
+
+	elem5.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState + 22500);
+
+window.setInterval(function (){
+if (
+	elem4.className==originalViewState) {elem4.className =changeViewState;}
+
+else {
+	elem4.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem4.style.fontSize= Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+	elem4.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState+10000);
+
+window.setInterval(function (){
+if (
+	elem3.className==originalViewState) {elem3.className =changeViewState;}
+
+else {
+	elem3.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem3.style.fontSize= Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+	elem3.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState);
+
+window.setInterval(function (){
+if (
+	elem2.className==originalViewState) {elem2.className =changeViewState;}
+
+else {
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem2.style.fontSize= Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+	elem2.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState+21000);
+
+window.setInterval(function (){
+if (
+	elem1.className==originalViewState) {elem1.className =changeViewState;}
+
+else {
+
+	var fontSizeInside=Math.random()*fontSizeFactorMultiple+fontSizeFactorAddOn;
+
+	elem1.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	//elem1.style.fontSize= fontSizeInside;
+
+	elem1.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState + 17000);
+
+
+changeColor();
+</script>
+</body></html>

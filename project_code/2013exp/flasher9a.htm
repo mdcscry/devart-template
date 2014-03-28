@@ -1,0 +1,126 @@
+
+<!-- saved from url=(0065)file:///C:/Documents%20and%20Settings/mcryer/Desktop/flasher9.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=flasher9b.htm">
+
+
+
+</head>
+
+
+<body><div id="myid2_bck" style="position: absolute; left: 0%; top: 0%; bottom: 0%; width: 100%; background-color: rgb(0, 153, 153); font-size: 600px; color: rgb(34, 34, 34); text-align: center; vertical-align: middle;"></div>
+
+
+<div id="myid2" style="position: absolute; left: 0%; top: 0%; bottom: 0%; width: 100%; background-color: rgb(0, 153, 153); font-size: 600px; color: rgb(191, 48, 48); text-align: center; vertical-align: middle; opacity: 0.9900000000000007; visibility: visible;">Ϯ</div>
+
+
+
+
+<script type="text/javascript">
+
+
+
+var element = document.getElementById("myid2");
+var element_bg = document.getElementById("myid2_bck");
+var Opa;
+
+var duration = 8000; /* fade duration in millisecond */
+var in_duration = 15000; /* fade duration in millisecond */
+var hidtime = 1000; /* time to stay hidden */
+var showtime = 10000; /* time to stay visible */
+
+var textChangeRate1=10000;
+var bgColChangeRate=100000;
+var fontChangeRate=50000;
+
+function SetOpa(Opa) {
+
+  element.style.opacity = Opa;
+  element.style.MozOpacity = Opa;
+  element.style.KhtmlOpacity = Opa;
+  element.style.filter = 'alpha(opacity=' + (Opa * 100) + ');';
+}
+
+
+
+
+function fadeOut() {
+  for (i = 0; i <= 1; i += 0.01) {
+  var Opa=1-i;
+    setTimeout("SetOpa(" + Opa +")", i * duration);
+  }
+
+   setTimeout("FadeIn()", (in_duration + hidtime));
+}
+
+function FadeIn() {
+  for (i = 0; i <= 1; i += 0.01) {
+    setTimeout("SetOpa(" + i +")", i * duration);
+  }
+   changeContent_invs();
+   changeContent();
+   setTimeout("changeContent_vs()",100);
+   setTimeout("fadeOut()", (duration + showtime));
+   changeColor();
+
+}
+
+function changeContent_invs(){
+  //   element.style.color=element.style.backgroundColor;
+     element.style.visibility="hidden";
+
+}
+function changeContent(){
+       element.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+}
+function changeContent_vs(){
+     element.style.visibility="visible";
+}
+
+function changeColor(){
+	var elem6_bg_color_chg=Math.random()*bgColChangeRate;
+	var elem6_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+	window.setInterval(function(){
+	   element.style.backgroundColor= elem6_bg_color;
+	   element_bg.style.backgroundColor= elem6_bg_color;
+	   },elem6_bg_color_chg);
+
+	window.setInterval(function(){
+		element.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate);
+}
+
+var mycolors=['#FF7400','#BF710','#A64B00','#FF9640','#FFB273','#FFAA00','#BF8F30','#A66F00','#FFBF40','#FFD073','FF0000','BF3030','A60000','FF4040','FF7373','009999'
+,'#1D7373','#006363','#33CCCC','#5CCCCC' ];
+
+var myarray=[32
+//line type symbols
+,9673,9675,9676,9677,9678,9679,9680,9681,9682,9683,9684,9685,9686,9687,9688,9689,9690,9691,9692,9693,9694,9695,9696,9697,9711,8960,8977,8986,9004,9022,9021,9033,9055,9061,9077,8709,2218,2219,8734
+,8853,8854,8855,8856,8857,8858,8859,8860,8861,9991,8853,8854,8855,8856,8857,8858,8859,8860,8861,1006
+];
+
+
+
+fadeOut();
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,80 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=dagenerator7.htm">
+<TITLE>6.DaGenerator-cuneiform 2 glyphs 2 colors</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+
+DIV   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 10s,3s;
+
+    position:absolute;
+    padding:0%;
+    margin:0%;
+    background:#000000;
+    font-size: 5px;
+    color:  #000000;
+
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;font-family:Akkadian,Code2000,Quivira,'Akshar Unicode',Quivira,'Akshar Unicode',Symbola,Aegyptus,'Arial Unicode MS',Code2002,Code2001;font-weight:900;">
+
+<DIV id="container" style="height:100%;width:100%;"></DIV>
+
+<script type="text/javascript">
+
+var fontChangeRate=1000;
+
+var mycolors=[
+'#F8F8FF','#FA8072','#000000','#000000','#000000'
+ ];
+
+var myarray=[
+73728
+
+//cuneiform2
+,74752
+];
+
+//container div
+var container=document.getElementById("container");
+
+var divId=[];
+
+
+for (divCounter=1;divCounter<=40000;divCounter++){
+ elementName='div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+ divId[divCounter].id=elementName;
+ //alert(divId[divCounter].id);
+container.appendChild(divId[divCounter]);
+divId[divCounter].style.position='relative';
+divId[divCounter].style.cssFloat='left';
+divId[divCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+}
+	window.setInterval(function(){
+
+	for (intervLoop=1;intervLoop<=2000;intervLoop++){
+		rndDiv=Math.round(Math.random()*39999+1);
+		//alert(rndDiv);
+
+		  try {
+		      divId[rndDiv].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		   } catch ( e ) {
+		      alert("Error: " + e.description + 'Value: ' + rndDiv );
+   }
+
+		}
+		},Math.random()*fontChangeRate+1000);
+
+</script>
+</body></html>

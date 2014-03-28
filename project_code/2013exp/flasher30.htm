@@ -1,0 +1,272 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=flasher31.htm">
+<TITLE>Pure Slow Single Fader</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+
+
+@-webkit-keyframes still
+{
+  0% {
+    -webkit-filter:   opacity(1) ;
+
+  }
+  100% {
+    -webkit-filter:   opacity(1)  ;
+
+  }
+
+}
+
+@-webkit-keyframes fadeOut
+{
+  0% {
+    -webkit-filter:    opacity(1) ;
+  }
+  100% {
+    -webkit-filter:    opacity(0)  ;
+  }
+
+}
+
+@-webkit-keyframes fadeIn
+{
+  0% {
+    -webkit-filter:     opacity(0) ;
+
+  }
+  100% {
+    -webkit-filter:  opacity(1)  ;
+
+  }
+
+}
+
+@-webkit-keyframes reverseBlur
+{
+  0% {
+    -webkit-filter:   blur(50px);
+
+  }
+  100% {
+    -webkit-filter:   blur(0px) ;
+
+  }
+}
+
+
+@-webkit-keyframes blur
+{
+  0% {
+    -webkit-filter:   blur(0px) ;
+  }
+  100% {
+    -webkit-filter:   blur(100px)  ;
+  }
+}
+
+DIV   {
+    position:absolute;
+    padding-top:0%;
+    left:0%;top:0%;
+    width:100%;height:100%;
+    background:#00857C;
+    font-size: 700px;
+    color:  #FFFFFF;
+    text-align:center;
+    vertical-align: middle;
+
+}
+
+#myid2_bck {
+	    position:absolute;
+	    padding-top:0%;
+	    left:0%;top:0%;
+	    width:100%;height:100%;
+	    background:#00857C;
+	    font-size: 700px;
+	    color:  #FFFFFF;
+	    text-align:center;
+	    vertical-align: middle;
+      opacity: 1;
+
+}
+
+#myid2 {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+}
+
+#myid2.display {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeIn;
+		-webkit-animation-duration: 20s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+#myid2.noDisplay {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: fadeOut;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: ease-in-out;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+#myid2.blur {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: blur;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+		-webkit-animation-fill-mode: both;
+}
+
+
+#myid2.still {
+      -webkit-transition-property: background-color,color;
+      -webkit-transition-duration: 3s,3s;
+
+		-webkit-animation-name: still;
+		-webkit-animation-duration: 30s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-delay: 0s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-direction: normal;
+		-webkit-animation-play-state: running;
+}
+
+</STYLE>
+
+
+
+<body style="overflow: hidden;font-family:Quivira,Code2000,Sun-ExtA,'Akshar Unicode',Symbola,'Arial MS Unicode'
+,Code2002,Code2001;">
+<div id="myid2_bck"></div>
+<div id="myid2" >123</div>
+
+<script type="text/javascript">
+var elem2 = document.getElementById("myid2");
+var elem2_bg = document.getElementById("myid2_bck");
+
+var textChangeRate1=10000;
+var bgColChangeRate=100000;
+var fontChangeRate=30000;
+var fontSizeFactorMultiple=850;
+var fontSizeFactorAddOn=100;
+var animationPlayState=30000;
+
+
+function changeColor(){
+	var elem2_bg_color_chg=Math.random()*bgColChangeRate+40000;
+	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+	window.setInterval(function(){
+	   	var elem2_bg_color=mycolors[Math.round((mycolors.length-1)*Math.random())];
+	   elem2.style.backgroundColor= elem2_bg_color;
+	   elem2_bg.style.backgroundColor= elem2_bg_color;
+	   },elem2_bg_color_chg);
+
+	window.setInterval(function(){
+		elem2.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())]; },Math.random()*fontChangeRate+5000);
+}
+
+var mycolors=['#FF7400','#BF710','#A64B00','#FF9640','#FFB273','#FFAA00','#BF8F30','#A66F00','#FFBF40','#FFD073','FF0000','BF3030','A60000','FF4040','FF7373','009999'
+,'#1D7373','#006363','#33CCCC','#5CCCCC' ];
+
+var myarray=[32,
+//circles
+169,174,248,216,558,556,554,664,778,730,847,920,927,952,1012,1060,1138,1146
+,1147,1365,1413,1439,1645,1637,1758,1757,1805,1792,1968,2336,2406,2538,2537,2534
+,2563,2662,2790,2819,2818,2848,2918,3074,3075,3174,3202,3203,3262,3302,3360,3458
+,3547,3663,3664,3665,3792,3845,3859,3860,3868,3898,3899,4032,4033,4034,4035,4041
+,4042,4043,4044,4113,4160,4347,4363,4351,4441,4540,4601,4672,4816,4928,5031,5054
+,5099,5156,5651,5872,5853,5861,5816,5871,5869,5994,6105,6102,6112,6160,6273,6470
+,7441,7484,7439,7602,7601,7615,8226,8281,8284,8280,8270,8258,8408,8413,8416,8584
+,8578,8576,8709,8734,8853,8854,8855,8856,8857,8858,8859,8860,8861,8912,8913,8914
+,8915,8917,8960,8982,8984,9022,9021,9068,9055,9098,9096,9152,9187,9673,9675,9676
+,9677,9678,9679,9680,9681,9682,9683,9684,9685,9689,9711,9702,9716,9717,9718,9719
+,9737,9775,9774,9772,9771,9770,9769,9763,9762,9760,9784,9785,9786,9787,9788,9854
+,9863,9865,9898,9899,9900,9901,9902,9967,9966,9965,10016,10018,10019,10020,10021
+,10022,10023,10025,10026,10027,10028,10029,10030,10031,10047,10046,10045,10044,10043
+,10042,10041,10040,10039,10038,10037,10036,10035,10034,10033,10032,10048,10049,10050
+,10051,10052,10053,10054,10055,10056,10057,10058,10059,10060,10061,10626,10687,10686
+,10683,10682,10680,10679,10678,10677,10718,10754,10753,10752,10739,10738,10807,10808
+,10823,10825,11044,11052,11053,11054,11055,11097,11096,11095,11094,11093,11298,11422
+,11423,11584,11569,11570,11604,11609,11790,11821,11824,11825,12292,12295,12342,12615
+,12678,12771,12807
+
+//,120134,120082,120186,120472,120505,120521,120495,120679,120695,120702
+//,120822,127744,127765,127761,127779,127803,127804,127800,127808,127845,128320,128440,128683
+//,128711,128789,128788,128819,128846,128838
+];
+
+
+//myAnimationArray=["noDisplay","blur","noDisplay","still"];
+
+var originalViewState="display";
+
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem2.className = originalViewState;
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+
+var changeViewState = "noDisplay";
+
+window.setInterval(function (){
+
+if (
+	elem2.className==originalViewState) {elem2.className =changeViewState;}
+
+else {
+	elem2.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+	elem2.className =originalViewState;
+}
+//var changeViewState = myAnimationArray[Math.round((myAnimationArray.length-1)*Math.random())];
+},animationPlayState);
+
+changeColor();
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

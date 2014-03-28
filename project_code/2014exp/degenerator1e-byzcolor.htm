@@ -1,0 +1,148 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=degenerator2.htm">
+<TITLE>1.DeGenerator-Byzantine</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+BODY   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 30s,3s;
+}
+DIV   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 30s,5s;
+
+
+
+    font-size: 150px;
+    left: 0%;top:0%;
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;font-family:musica,symbola,aroania,alexander;asea">
+
+
+
+<script type="text/javascript">
+
+var fontChangeRate=200;
+
+var mycolors=[];
+var colNum=5;
+
+setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*80),.6);
+setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*80),.6);
+setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*80),.6);
+setColor(Math.round(Math.random()*360),Math.round(Math.random()*800),Math.round(Math.random()*80),.6);
+
+function setColor(hue,sat,light,opa){
+
+for (colorCounter=1;colorCounter<=colNum;colorCounter++){
+var toSpliceColor='hsla('
++  Math.round(hue+Math.random()*40-20) + ','
++  Math.round(40*Math.random()+5+sat-20)+ '%,'
++ (Math.round(Math.random()*20)+light) + '%,'
++ (Math.random(opa)-.3	)
++ ')';
+//alert (toSpliceColor);
+
+	mycolors.push(toSpliceColor);
+	}
+}
+
+//elem2_bg.style.background= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+var myarray=[
+//byzantine
+118784,118785,118786,118787,118788,118789,118790,118791,118792,118793,118794,118795,118796,118797,118798,118799,118800,118801,118802,118803,118804,118805
+,118806,118807,118808,118809,118810,118811,118812,118813,118814,118815,118816,118817,118818,118819,118820,118821,118822,118823,118824,118825,118826,118827
+,118828,118829,118830,118831,118832,118833,118834,118835,118836,118837,118838,118839,118840,118841,118842,118843,118844,118845,118846,118847,118848,118849
+,118850,118851,118852,118853,118854,118855,118856,118857,118858,118859,118860,118861,118862,118863,118864,118865,118866,118867,118868,118869,118870,118871
+,118872,118873,118874,118875,118876,118877,118878,118879,118880,118881,118882,118883,118884,118885,118886,118887,118888,118889,118890,118891,118892,118893
+,118894,118895,118896,118897,118898,118899,118900,118901,118902,118903,118904,118905,118906,118907,118908,118909,118910,118911,118912,118913,118914,118915
+,118916,118917,118918,118919,118920,118921,118922,118923,118924,118925,118926,118927,118928,118929,118930,118931,118932,118933,118934,118935,118936,118937
+,118938,118939,118940,118941,118942,118943,118944,118945,118946,118947,118948,118949,118950,118951,118952,118953,118954,118955,118956,118957,118958,118959
+,118960,118961,118962,118963,118964,118965,118966,118967,118968,118969,118970,118971,118972,118973,118974,118975,118976,118977,118978,118979,118980,118981
+,118982,118983,118984,118985,118986,118987,118988,118989,118990,118991,118992,118993,118994,118995,118996,118997,118998,118999,119000,119001,119002,119003
+,119004,119005,119006,119007,119008,119009,119010,119011,119012,119013,119014,119015,119016,119017,119018,119019,119020,119021,119022,119023,119024,119025
+,119026,119027,119028,119029
+];
+
+//container div
+
+var containerCount=240;
+var containerId=[];
+
+for (containerCounter=1;containerCounter<=containerCount;containerCounter++){
+	containerName='container' + containerCounter;
+	containerId[containerCounter] = document.createElement("div");
+	document.body.appendChild(containerId[containerCounter]);
+	containerId[containerCounter].id=containerName+'-div0';
+	containerId[containerCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+	//style
+	containerId[containerCounter].style.position='relative';
+	containerId[containerCounter].style.cssFloat='left';
+	containerId[containerCounter].style.textAlign='center';
+	containerId[containerCounter].style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		containerId[containerCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+
+var divId=[];
+
+
+for (divCounter=1;divCounter<=2;divCounter++){
+ elementName=containerName + '-div'+divCounter;
+ divId[divCounter] = document.createElement("div");
+ divId[divCounter].innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+
+ //alert(divId[divCounter].id);
+containerId[containerCounter].appendChild(divId[divCounter]);
+divId[divCounter].id=elementName;
+divId[divCounter].style.position='absolute';
+
+divId[divCounter].style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+//divId[divCounter].style.opacity=.75;
+divId[divCounter].style.top=0;
+divId[divCounter].style.padding='-10px';
+//divId[divCounter].style.left=0;
+//divId[divCounter].style.width='75px';
+
+}
+}
+
+	window.setInterval(function(){
+
+		rndDivContainer=Math.round(Math.random()*(containerCount-1)+1);
+		//rndDivContainer=1;
+		rndDivChild=Math.round(Math.random()*1+1);
+		elementName='container' + rndDivContainer + '-div'+ rndDivChild;
+		 node=document.getElementById(elementName);
+		  try {
+		      node.style.color= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		       node.innerHTML= '&#'+myarray[Math.round((myarray.length-1)*Math.random())]+';';
+		   } catch ( e ) {
+		      alert("Error: " + e.description + 'Value: ' + elementName );
+  			 }
+
+
+		},Math.random()*fontChangeRate);
+
+//////////////////////Body Background
+		window.setInterval(function(){
+		 		  try {
+		 		  	  document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+		 		   } catch ( e ) {
+		 		      alert("Error: " + e.description + 'Value body background: ' + elementName );
+		   			 }
+		},Math.random()*fontChangeRate+30000);
+
+
+</script>
+</body></html>

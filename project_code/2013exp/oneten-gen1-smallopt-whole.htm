@@ -1,0 +1,89 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="300;url=flasher.htm">
+<TITLE>1.10-gen1-smallopt</TITLE>
+
+</head>
+
+
+<STYLE type="text/css">
+BODY { -webkit-transition-property: background-color;
+	      -webkit-transition-duration: 10s;
+	 }
+DIV   {
+	      -webkit-transition-property: background-color,color;
+	      -webkit-transition-duration: 10s,7s;
+
+    padding:0%;
+    margin:0%;
+    background:#FFFFFF;
+    font-size: 150px;
+    color:  #000000;
+    left: 4%;
+    top:10%;
+    overflow: hidden;
+}
+
+</STYLE>
+
+
+<body style="overflow: hidden;;font-weight:900;">
+
+
+
+<script type="text/javascript">
+
+var fontChangeRate=2000;
+
+var mycolors=['#000000','#000080'];
+
+langArray =[];
+
+langArray[0]=['English',1,2,3,4,5,6,7,8,9];
+langArray[1]=['Cyrillic',1,2,3,4,5,6,7,8,9];
+langArray[2]=['Canadian Syllables',1,2,3,4,5,6,7,8,9];
+
+//var langMasterArray=[langArray[0],langArray[1],langArray[2]];
+
+
+
+
+document.body.style.backgroundColor= mycolors[Math.round((mycolors.length-1)*Math.random())];
+
+//container div
+
+var containerCount=3;
+var containerId=[];
+
+
+
+
+for (containerCounter=1;containerCounter<=containerCount;containerCounter++){
+	containerName='container' + containerCounter;
+	containerId[containerCounter] = document.createElement("div");
+	document.body.appendChild(containerId[containerCounter]);
+	containerId[containerCounter].id=containerName+'-div0';
+	containerId[containerCounter].innerHTML= langArray[containerCounter-1][0];
+
+	//style
+	containerId[containerCounter].style.position='absolute';
+	containerId[containerCounter].style.cssFloat='none';
+	containerId[containerCounter].style.opacity=1;
+	containerId[containerCounter].style.width='99%';
+	containerId[containerCounter].style.height='33%';
+	containerId[containerCounter].style.left='.5%';
+	containerId[containerCounter].style.top=(33*containerCounter)-32.5+'%';
+	containerId[containerCounter].style.textAlign='center';
+	containerId[containerCounter].style.verticalAlign='bottom';
+	containerId[containerCounter].style.borderRadius='20px';
+
+	}
+
+
+
+
+
+
+
+</script>
+</body></html>
