@@ -1,0 +1,65 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+</head>
+<body style="font-size:50px;left:50%;white-space:normal;text-align:justify;">
+
+<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+<script type ="text/JavaScript" src="./css_js/nonRsvdUtf.js"></Script>
+
+<script type="text/javascript">
+
+var browserPrefix;
+var ua=navigator.userAgent;
+var browseWidth;
+var spanid;
+var spanWidth;
+var eleWidth;
+var counter=0;
+var hexTest='';
+var utfExpString;
+
+if (ua.indexOf("AppleWebKit")>0){browserPrefix='webkit';browseWidth=50;} else if (ua.indexOf("msie")>0){browserPrefix='msie';} else {browserPrefix='moz';browseWidth=22;}
+
+document.write("<span style='position:absolute;left:-15%;' id='widthTester'></span>");
+
+
+
+
+
+function hexTester(){
+	hexTest=myValidationArray[Math.round((myValidationArray.length-1)*Math.random())];
+
+	if ( myComboValidationArray.indexOf(hexTest) < 0 ) {
+		 testWidth=document.getElementById("widthTester");
+		 testWidth.innerHTML="&#x" + hexTest + ";";
+		 eleWidth=testWidth.offsetWidth;
+		 widthTester.innerHTML='';
+		if(eleWidth!=0 && eleWidth!=browseWidth) { return true;} else { return false;}
+	} else {return false;}
+}
+
+
+do {
+
+if (hexTester()==true){
+spanid='span'+hexTest;
+document.write("<span  id='" +spanid+ "' style='text-align:justify;' title='"+ hexTest+"'></span>");
+utfExp=document.getElementById(spanid);
+
+
+ utfExpString="&#x" + hexTest +";";
+utfExp.innerHTML=utfExpString;
+      counter++;
+//alert(hexTest);
+}
+
+}while( counter < 3);
+
+
+
+</script>
+</body>
+</html>
