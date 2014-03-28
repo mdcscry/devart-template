@@ -55,3 +55,7 @@ Added Cardo added to main website here
 http://glyphmatic.us/?i=06
 http://glyphmatic.us/?i=11
 woohoo.
+
+<b>Picture album:</b>
+https://www.facebook.com/matthew.cryer.3/media_set?set=a.629503833767224.1073741828.100001228395928&type=3
+https://www.facebook.com/matthew.cryer.3/media_set?set=a.617377598313181.1073741825.100001228395928&type=3
