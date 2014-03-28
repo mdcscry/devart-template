@@ -23,4 +23,7 @@ history of unicode and google font api
 
 advertising
 
-Bundle all that into a little information center.  Where people from everywhere and who speak every language will find something interesting.
+Bundle all that into a little information center.  Where people from everywhere and who speak every language will find something interesting.  
+
+Additionally, as you've seen, I do a little sound, I do a little fiber arts.  My wife runs http://frequentflyers.org.  We have collaborated before.  She just completed an interactive piece.  This little simple tool can be used in many, many ways.
+
